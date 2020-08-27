@@ -18,3 +18,9 @@ This data can be remotely accessed via a php nginx web server interface from the
 The hardware is based on a Raspberry Pi and an Arduino MEGA, powered by a 12V 100Ah AGM Deep Cycle Battery which is charged by a 12V 150W Solar panel via a PWM Solar charge controller. The 12V input is regulated to 5.2V for the Raspberry Pi and 9.0V for the Arduino. These voltages are also used as required for charging the wifi dongle, powering sensors, servos and digital relays. The Raspberry Pi runs the web server and a python program that operates a bi-directional serial communications channel with the Arduino. The latter is attached to the various weather sensors. It also controls the digital relay used to time the charging of the wifi dongle and the servo used to reset it. Control messages are typically sent from the Raspberry Pi via the serial channel to the Arduino (running a C++ program) which then returns sensor results or performs requested actions and returns confirmation messages.         
 
 ## LIST OF PARTS
+| Qty | Product | Description |
+| --- | ---- | --- |
+|1 | [XC4430](https://jaycar.com.au/p/XC4430) | Duinotech Leonardo  |
+|1 | [XC3712](https://jaycar.com.au/p/XC3712) | GPS Receiver module |
+|1 | [XC4630](https://jaycar.com.au/p/XC4630) | 2.8" TFT LCD screen. |
+| | | Some double sided and single sided tape |
