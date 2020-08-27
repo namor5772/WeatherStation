@@ -8,7 +8,7 @@ This document describes the design and programming of an IOT enabled weather sta
 5. Wind speed (km/h)
 6. Wind direction (deg)
 7. CPU temp (C) - of the Raspberry Pi
-8. Current (A) - being drawn from the battery
+8. Current (A) - being drawn from the solar panel charged battery
 9. INA260 Voltage (V) - at the inputs to circuit voltage regulators
 10. Power (W)
 
