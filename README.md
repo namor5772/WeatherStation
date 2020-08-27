@@ -31,3 +31,8 @@ The hardware is based on a Raspberry Pi and an Arduino MEGA, powered by a 12V 10
 |1 | [ADA2652](https://core-electronics.com.au/adafruit-bme280-i2c-or-spi-temperature-humidity-pressure-sensor.html) | Adafruit BME280 I2C or SPI Temperature Humidity Pressure Sensor | $45.02 |
 |1 | [XC4514](https://jaycar.com.au/p/XC4514) | Arduino Compatible DC Voltage Regulator | $7.95 |
 |1 | [SEN-15901](https://core-electronics.com.au/weather-meter-kit.html) | Weather Meter Kit | $144.80 |
+|1 | [BOB-14021](https://core-electronics.com.au/sparkfun-rj11-breakout.html) | SparkFun RJ11 Breakout | $2.95 |
+|2 | [PRT-00132](https://core-electronics.com.au/rj11-6-pin-connector.html) | RJ11 6-Pin Connector | $4.78 |
+|1 | [XC4419](https://jaycar.com.au/p/XC4419) | Arduino Compatible 5V Relay Board | $5.45 |
+
+|1 | [SEN-15901](https://core-electronics.com.au/) |  |  |
