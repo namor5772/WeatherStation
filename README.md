@@ -34,5 +34,6 @@ The hardware is based on a Raspberry Pi and an Arduino MEGA, powered by a 12V 10
 |1 | [BOB-14021](https://core-electronics.com.au/sparkfun-rj11-breakout.html) | SparkFun RJ11 Breakout | $2.95 |
 |2 | [PRT-00132](https://core-electronics.com.au/rj11-6-pin-connector.html) | RJ11 6-Pin Connector | $4.78 |
 |1 | [XC4419](https://jaycar.com.au/p/XC4419) | Arduino Compatible 5V Relay Board | $5.45 |
-
-|1 | [SEN-15901](https://core-electronics.com.au/) |  |  |
+|1 | [YM2718](https://jaycar.com.au/p/YM718) | Arduino Compatible 9G Micro Servo Motor | $11.95 |
+|1 | [CE04421](https://core-electronics.com.au/raspberry-pi-camera-board-v2-8-megapixels-38552.html) | Raspberry Pi Camera Board v2 - 8 Megapixels | $38.95 |
+|1 | [ADA1731](https://core-electronics.com.au/flex-cable-for-raspberry-pi-camera-610mm-24.html) | Flex Cable for Raspberry Pi Camera - 610mm / 24" | $6.66 |
