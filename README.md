@@ -12,4 +12,4 @@ This document describes the design and programming of an IOT enabled weather sta
 9. INA260 Voltage (V) - at the inputs to circuit voltage regulators
 10. Power (W)
 
-This data can be remotely accessed via a php nginx web server interface, which also enables add hoc contol and data requests. There is also a camera which can be be controlled to take pictures on demand.
+This data can be remotely accessed via a php nginx web server interface from the Raspberry Pi, which also enables add hoc contol and data requests. There is also a camera which can be be controlled to take pictures on demand.
