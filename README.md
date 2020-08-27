@@ -20,7 +20,7 @@ The hardware is based on a Raspberry Pi and an Arduino MEGA, powered by a 12V 10
 ## LIST OF PARTS
 | Qty | Product | Description |
 | --- | ---- | --- |
-|1 | [XC9001](https://jaycar.com.au/p/XC9001) | Raspberry Pi 3B+ |
-|1 | [XC3712](https://jaycar.com.au/p/XC3712) | GPS Receiver module |
-|1 | [XC4630](https://jaycar.com.au/p/XC4630) | 2.8" TFT LCD screen. |
+|1 | [XC9001](https://jaycar.com.au/p/XC9001) | Raspberry Pi 3B+ Single Board Computer |
+|1 | [XC4486](https://jaycar.com.au/p/XC4486) | Arduino Compatible Logic Level Converter Module |
+|1 | [XC4414](https://jaycar.com.au/p/XC4414) | Duinotech Nano Board - Arduino Compatible |
 | | | Some double sided and single sided tape |
