@@ -76,7 +76,7 @@ The Vero board circuit logic was designed in TinyCAD and layout in VeeCAD
 ### Components external to main circuit board
 
 | Qty | Product | Description | AUD Cost | Comment |
-| --- | ---- | --- | --- | -------- |
+| --- | ---- | --- | --- | - |
 |1 | [PP1970](https://jaycar.com.au/p/PP1970) | Marine Grade 10A Locking Lighter Plug | $7.95 | Used to get 12V power from Battery Box |
 |1 | [WH3057](https://jaycar.com.au/p/WH3057) | 7.5 Amp 2 Core Tinned DC Power Cable -  3 metre | $4.80 | Connects above to main vero circuit board |
 |1 | [SB1682](https://jaycar.com.au/p/SB1682) | 12V 100Ah AGM Deep Cycle Battery | $299.0 | stores all power for this weather station  
