@@ -87,5 +87,5 @@ The Vero board circuit logic was designed in TinyCAD and layout in VeeCAD
 |1 | [WH3004](https://jaycar.com.au/p/WH3004) | Yellow Light Duty Hook-up Wire - 25m ( only 3 metres needed ) | $5.95 |
 |1 | [WH3007](https://jaycar.com.au/p/WH3007) | White Light Duty Hook-up Wire - 25m ( only 2 metres needed )| $5.95 |
 |1 | [HP1225](https://jaycar.com.au/p/HP1225) | 10mm Loom Tube - 10 metres ( only 4 metres needed ) | $18.95 |
-|1 | [??](https://jaycar.com.au/p/HP1225) | WIFI DONGLE | $? |
+|1 | [WIFI DONGLE](https://www.telstra.com.au/internet/mobile-broadband/telstra-4gx-wifi-pro) | Telstra 4GX Wi-Fi Pro | $120.0 |
 |1 | [??](https://jaycar.com.au/p/HP1225) | 2M USB A to Micro ? CABLE | $? |
