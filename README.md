@@ -74,4 +74,6 @@ The Vero board circuit logic was designed in TinyCAD and layout in VeeCAD
 |1 | [WH3007](https://jaycar.com.au/p/WH3007) | White Light Duty Hook-up Wire - 25m ( only 2 metres needed )| $5.95 |
 |1 | [WC7723](https://jaycar.com.au/p/WC7723) | 0.5m USB A male to Micro-B Cable ( can be 0.25m ) | $5.95 |
 |1 | [WC7757](https://jaycar.com.au/p/WC7757) | USB A to USB Micro B Cable 150mm | $4.95 |
-|1 | [HP1225](https://jaycar.com.au/p/HP1225) | 10mm Loom Tube - 10 metres ( only 4 metres needed) | $18.95 |
+|1 | [HP1225](https://jaycar.com.au/p/HP1225) | 10mm Loom Tube - 10 metres ( only 4 metres needed ) | $18.95 |
+|1 | [??](https://jaycar.com.au/p/HP1225) | WIFI DONGLE | $? |
+|1 | [??](https://jaycar.com.au/p/HP1225) | 2M USB A to Micro ? CABLE | $? |
