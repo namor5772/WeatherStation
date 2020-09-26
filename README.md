@@ -19,9 +19,9 @@ This document describes the design and programming of an IOT enabled weather sta
 
 This data can be remotely accessed via a php nginx web server interface from the Raspberry Pi, which also enables add-hoc contol and data requests. There is also a camera (attached to the Raspberry Pi) which can be be controlled to take pictures on demand.
 
-The hardware is based on a Raspberry Pi 3A+ and an Arduino Leonardo together with a Vero strip based board that contains the Voltage Regulator and all other circuits. Everything is powered by a 12V 100Ah AGM Deep Cycle Battery which is charged by a 12V 150W Solar panel via a PWM Solar charge controller. The 12V input is regulated to 5.2V for the Raspberry Pi. This is is also used as required for charging the wifi dongle, powering the Arduino (from the Raspberry Pi), powering sensors, servos and the digital relay. The Raspberry Pi runs the web server and a python program that operates a bi-directional serial communications channel with the Arduino. The latter is ultimately attached to the various weather sensors. It also controls the digital relay used to time the charging of the wifi dongle and the servo used to reset it. Control messages are typically sent from the Raspberry Pi via the serial channel to the Arduino (running a C++ program) which then returns sensor results or performs requested actions and returns confirmation messages.
-The wifi dongle and servo are attched by loomed 2 metre cables to the Vero board. The temperatue, pressure and humidity sensor is similarily attached with 1 metre cables. The two RJ11 terminated 3 metre cables from the rainfall, windspeed and wind direction sensors also attach to the Vero board.
-The Vero board circuit logic was designed in TinyCAD and layout in VeeCAD
+The hardware is based on a Raspberry Pi 3A+ and an Arduino Leonardo together with a Vero strip based board that contains the Voltage Regulator and all other "glue" circuits. Everything is powered by a 12V 100Ah AGM Deep Cycle Battery which is charged by a 12V 150W Solar panel via a PWM Solar charge controller. The 12V input is regulated to 5.2V for the Raspberry Pi. This is is also used as required for charging the wifi modem, powering the Arduino (from the Raspberry Pi), powering sensors, servos and the digital relay. The Raspberry Pi runs the web server and a python program that operates a bi-directional serial communications channel with the Arduino. The latter is ultimately attached to the various weather sensors. It also controls the digital relay used to time the charging of the wifi modem and the servo used to reset it. Control messages are typically sent from the Raspberry Pi via the serial channel to the Arduino (running a C++ program) which then returns sensor results or performs requested actions and returns confirmation messages.
+The wifi modem and servo are attched by loomed 2 metre cables to the Vero board. The temperatue, pressure and humidity sensor is similarily attached with 1 metre cables. The two RJ11 terminated 3 metre cables from the rainfall, windspeed and wind direction sensors also attach to the Vero board.
+The Vero board circuit logic was designed in TinyCAD and its layout in VeeCAD.
 
 ## List of parts
 #  
@@ -76,7 +76,7 @@ The Vero board circuit logic was designed in TinyCAD and layout in VeeCAD
 ### Components external to main circuit board
 
 | Qty | Product | Description | AUD Cost | Comment |
-| --- | ---- | --- | --- | - |
+| --- | --- | --- | --- | --- |
 |1 | [PP1970](https://jaycar.com.au/p/PP1970) | Marine Grade 10A Locking Lighter Plug | $7.95 | Used to get 12V power from Battery Box |
 |1 | [WH3057](https://jaycar.com.au/p/WH3057) | 7.5 Amp 2 Core Tinned DC Power Cable -  3 metre | $4.80 | Connects above to main vero circuit board |
 |1 | [SB1682](https://jaycar.com.au/p/SB1682) | 12V 100Ah AGM Deep Cycle Battery | $299.0 | stores all power for this weather station  
