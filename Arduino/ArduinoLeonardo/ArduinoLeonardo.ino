@@ -7,13 +7,15 @@
 
 #define SEALEVELPRESSURE_HPA (1013.25)
 
-// You cannot run this code without the Serial set and monitored.
-// If running standalone it crashes. In that case comment out DEBUG flag below:
+// Must set "#define DEBUG" if you are to run this code with the Serial set and monitored.
+// If running in production (ie. no connection to PC) then MUST comment out "#define DEBUG",
+// before compiling and loading, and then disconnecting from PC and restarting.
+
 // #define DEBUG
 
+// creating objects for Adafruit I2C sensors
 Adafruit_BME280 bme; // I2C
-
-Adafruit_INA260 ina260 = Adafruit_INA260();
+Adafruit_INA260 ina260 = Adafruit_INA260(); // I2C
 
 // serial message received from Raspberry Pi
 char sm[65]; // to match serial buffer size + 1 for string terminator char '\0'
@@ -25,7 +27,6 @@ const int ledPin=13;
 
 // Analog Wind direction  - sensor related variables
 int WindDirectionAnalogPin = A2;
-
 
 // Tipping bucket rain sensor - related variables
 const int iRT = 8; // D8
@@ -81,8 +82,6 @@ void setup() {
   DongleServo.attach(ServoDigitalPin);
   DongleServo.write(ServoStartpos);
   delay(100);  
-
-
   
   // Tipping bucket Rain Sensor and Cup Anemometer Sensor interrupt setup
   attachInterrupt(digitalPinToInterrupt(7),aSensorTripped, RISING); // Interrupt on D7
@@ -106,9 +105,10 @@ void setup() {
   if (!ina260.begin()) {
     Serial.println(F("INA260 not found"));
     while(1);
-  }
-  Serial.println(" ");
-  Serial.println(F("Found INA260 chip"));
+  } else {
+    Serial.println(" ");
+    Serial.println(F("Found INA260 chip"));
+  }  
 
   // Starting BME280 sensor board
   unsigned status;
@@ -116,8 +116,9 @@ void setup() {
   if (!bme.begin()) {
     Serial.println(F("BME280 not found"));
     while (1);
-  }
-  Serial.println(F("Found BME280 chip"));
+  } else {
+    Serial.println(F("Found BME280 chip"));
+  }  
 
   // initialise tipping bucket rain sensor and cup anamometer variables  
   for (int j=0; j<nRT; j++) { aRT[j]=0.0; }
