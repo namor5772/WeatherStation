@@ -11,7 +11,7 @@
 // If running in production (ie. no connection to PC) then MUST comment out "#define DEBUG",
 // before compiling and loading, and then disconnecting from PC and restarting.
 
-// #define DEBUG
+#define DEBUG
 
 // creating objects for Adafruit I2C sensors
 Adafruit_BME280 bme; // I2C
@@ -381,17 +381,13 @@ float getWindDirection()
   else if (iwd < 917) { x = 315.0; }
   else if (iwd < 989) { x = 270.0; }
   else { x = -1.0; }
-//  Serial.println(iwd);
   return x;
 }
 
-// a Sensor is tripped - short with debounce! 
+// a Sensor is tripped - No software debounce since assume hardware
 void aSensorTripped()
 {
-  // delay of 25 millis means can deal with 40 anemometer revs/sec
-  // which assuming linearity? corresponds to max of 96km/hr winds.   
 //  if ((millis() - tsINT) > 25 ) {
-    
     // determine which sensor triggered interrupt
     bRT = digitalRead(iRT);  
     bCA = digitalRead(iCA);
@@ -405,7 +401,6 @@ void aSensorTripped()
     // just for debugging
     Serial.print(bRT);
     Serial.print(bCA);
-    Serial.println(bINT);
     Serial.println(tsINT);
 //  }
 }
