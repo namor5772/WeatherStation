@@ -1,6 +1,6 @@
 # WeatherStation
 
-[Arduino](Arduino\README.md)
+[Arduino](WEATHERSTATION/Arduino/README.md)
 
 ## Summary
 
