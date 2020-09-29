@@ -65,14 +65,8 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 	• sudo /etc/init.d/nginx start
 	• sudo netstat -an | grep LISTEN | grep :80
 		○ To check that a service is listening on port 80. It should show something like:
-		
-
 	• sudo service nginx restart
 		○ To restart NGINX. It doesn't hurt!
-	
-	• sudo apt-get install mysql-server
-	• sudo mysql_secure_installation (and logically setup passwords)
-	
 	• sudo apt install php-fpm
 	• cd /etc/nginx
 	• sudo nano sites-enabled/default
