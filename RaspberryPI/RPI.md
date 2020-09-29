@@ -29,8 +29,8 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 	• In terminal window type
 		○ sudo apt update
 		○ sudo apt install python3 idle3
-		○ as at 4/05/2020 this installs Python 3.7.3 with IDLE 3.7.3 and Tk 8.6.9.
-			○ This information is available in the GUI from the Application Menu => Programming => Python 3 (IDLE)
+		○ as at 30/09/2020 this installs Python 3.7.3 with IDLE 3.7.3 and Tk 8.6.9.
+			○ This information is available in the GUI from the Application Menu => Programming => Python 3 (IDLE) => Help => About IDLE
 	• Install nginx, mysql and php for Python 3 on the Raspberry PI:
 		○ As per the below link.
 		○ Note: mariadb seems to replace mysql
@@ -51,3 +51,84 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 			○ The "container" Python script is:
 			○ The actual Python script is:
 			○ Client side:
+
+
+
+
+
+### Install nginx, mysql and php for Python 3 on the Raspberry PI:
+
+	• cd /
+	• pip3 --version
+	• sudo apt-get update
+	• sudo apt-get install nginxhostname -I
+	• sudo /etc/init.d/nginx start
+	• sudo netstat -an | grep LISTEN | grep :80
+		○ To check that a service is listening on port 80. It should show something like:
+		
+
+	• sudo service nginx restart
+		○ To restart NGINX. It doesn't hurt!
+	
+	• sudo apt-get install mysql-server
+	• sudo mysql_secure_installation (and logically setup passwords)
+	
+	• sudo apt install php-fpm
+	• cd /etc/nginx
+	• sudo nano sites-enabled/default
+		○ Find the line "index index.html index.htm;"
+		○ Add "index.php" after "index" in above line
+		○ Find the line "# location ~ \.php$ {"
+		○ and add the following lines or remove # till the next "}"
+			§ include snippets/fastcgi-php.conf;
+			§ fastcgi_pass unix:/var/run/php/php7.0-fpm.sock; (reflecting version of php)
+		○ It should look like
+			location ~ .php$ {
+				include snippets/fastcgi-php.conf;
+				fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+				}
+		○ Save the above edited file and reload
+			§ sudo /etc/init.d/nginx reload 
+
+	• To test the server:
+		○ find the address on the Raspberry PI
+			§ hostname -I
+		○ it will give you something like 192.168.0.12
+		○ type http://192.168.0.12 in the browser of another PC attached to the local network:
+
+		
+		
+	• To make nginx restart if it crashes non gracefully (it has happened):
+		○ Go to /lib/systemd/system and backup the nginx systemd unit (just in case)
+			§ cd /
+			§ cd /lib/systemd/system
+			§ sudo cp nginx.service nginx.service.old
+		○  Add the following 2 lines at the end of the [Service] block of nginx.service
+				□ Restart=on-failure
+				□ RestartSec=9s
+			§ Do this by typing: sudo nano nginx.service
+			§ Saving the edited nginx.service file: Ctrl-X, Y, Enter.
+		○ load the new config:
+			§ sudo systemctl daemon-reload
+		○ To test kill nginx:
+			§ cd /
+			§ cd var/run
+			§ cat nginx.pid (will give you the PID)
+			§ sudo kill -9 PID
+			§ The nginx process will restart with a different PID (as can be viewed through the Task Manager)
+
+	• To test PHP  
+		○ cd /
+		○ cd var/www/html
+		○ sudo chmod o+w /var/www/html (to enable copying into this folder for later)
+		○ sudo nano index.nginx-debian.html (being the default web page)
+		○ Add the below lines just above the </body> tag:
+			§ <?php
+			§ phpinfo();
+			§ ?>
+		○ Save the file as index.php
+		○ View http://192.168.0.12 again
+
+		
+		
+
