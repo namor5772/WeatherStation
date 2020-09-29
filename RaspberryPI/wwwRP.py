@@ -12,7 +12,7 @@ import shutil
 
 k=0
 #setup serial connection to Arduino
-ser = serial.Serial('/dev/ttyS0',9600,timeout=1.0)
+ser = serial.Serial('/dev/ttyS0',4800,timeout=2.0)
 bSerial = False
 
 
@@ -113,7 +113,7 @@ n=0
 n2=0
 
 # gap in minutes between data collection events (assume 60 % minGap == 0)
-minGap = 1
+minGap = 10
 hourGap = 24
 
 # data collection time gap
@@ -139,7 +139,7 @@ powerOFFtime = datetime.time(OFF_hr,OFF_min,0,0)
 powerONtime = datetime.time(ON_hr,ON_min,0,0)
 
 # variables related to turining the wifi dongle off and then back on automatically after a set time.
-wifiTimeOFF = 3 # default time in minutes for which wifi will be turned off.
+wifiTimeOFF = 5 # default time in minutes for which wifi will be turned off.
 dtd3 = datetime.timedelta(days=0,hours=0,minutes=wifiTimeOFF,seconds=10)
 wifiTURN_ON = False # default state is that we do not want to turn the wifi on
 WIFIactTime = actTime # just for initialisation
@@ -281,7 +281,7 @@ try:
                                      "st - Test the serial Raspberry PI to Arduino link\r\n",
                                      "pb - Press the wifi dongle button for 6 seconds (for testing servo)\r\n",
                                      "rw - Press the wifi dongle button for 10 seconds to turn it off\r\n",
-                                     "---> and then turn it back on in 3 minutes\r\n", 
+                                     "---> and then turn it back on in 5 minutes\r\n", 
                                      "sh arg1 - run shell script named arg1 with no arguments\r\n",
                                      "---> reboot\r\n"
                                      "---> with @ = 0 or 1 have scripts\r\n",
