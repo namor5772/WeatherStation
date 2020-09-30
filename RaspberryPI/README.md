@@ -3,7 +3,7 @@
 The goal is to launch a python script on reboot of the Raspberry PI and have the script restart if it crashes.
 We are using a Raspberry PI 3A+ and run all scripts using Python 3 which we assume has been installed.
 
-[Install](#Install)
+[Install](#Install_nginx)
 
 
 ## Hardware
@@ -62,7 +62,9 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 
 
 
+### Install_nginx
 ### Install nginx, mysql and php for Python 3 on the Raspberry PI:
+
 
 
 	• cd /
