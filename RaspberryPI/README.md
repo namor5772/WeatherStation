@@ -114,8 +114,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 
 ## Setup Dataplicity:
 
-Dataplicity is necessary so that the web server residing on the Raspberry Pi will be accessible from anywhere in the world with an arbitrary modern browser
-To enable the Raspberry Pi to be a node in my IOT. Dataplicity is a sort of VPN service.
+Dataplicity is necessary so that the web server residing on the Raspberry Pi will be accessible from anywhere in the world with an arbitrary modern browser. This enables the Raspberry Pi to be a node in my IOT. Dataplicity is a sort of VPN service.
 
 On an arbitrary PC (eg. Win10) with an arbitrary browser open
 https://www.dataplicity.com and if not already done so setup account. You will need:
@@ -126,7 +125,7 @@ https://www.dataplicity.com and if not already done so setup account. You will n
 This webpage is now your window to dataplicity. But you can also access its functionality with a Windows 10 app downloaded from the Microsoft Store
 ![alt text](images/Dataplicity1.png "dataplicity pic 1")
 
-You will need to install the Dataplicity agent by running the following on your Raspberry Pi terminal: 
+You will need to install the Dataplicity agent by running the following on your Raspberry Pi terminal:
 ![alt text](images/Dataplicity2.png "dataplicity pic 2")
 
 Once this has been done the Raspberry Pi should appear on the "Your Devices" menu above, as shown below:
@@ -148,21 +147,19 @@ To be able to SSH into the Raspberry PI select the device and on the Dataplicity
 * su pi
 * RPIPWD (the Raspberry PI password)
 
-![alt text](images/dataplicity7.png "dataplicity pic 7")
+![alt text](images/Dataplicity7.png "dataplicity pic 7")
 
 Assuming you open Dataplicity in the browser and **NOT** the app select
-![alt text](images/dataplicity8.png "dataplicity pic 8")
+![alt text](images/Dataplicity8.png "dataplicity pic 8")
 
 To display:
-![alt text](images/dataplicity9.png "dataplicity pic 81")
+![alt text](images/Dataplicity9.png "dataplicity pic 81")
 
 To enable the Raspberry PI website select the Wormhole slider and edit the website name to the extent possible:
 
-![alt text](images/dataplicity10.png "dataplicity pic 10")
+![alt text](images/Dataplicity10.png "dataplicity pic 10")
 
-![alt text](images/dataplicity11.png "dataplicity pic 11")
+![alt text](images/Dataplicity11.png "dataplicity pic 11")
 
 This determines the name of where my Raspberry PI an be reached from the WWW. In this case
 https://DATAPLICITYNAME-device.dataplicity.io
-
-TEST
