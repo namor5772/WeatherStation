@@ -119,7 +119,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 		- cat nginx.pid (will give you the PID)
 		- sudo kill -9 PID
 		- The nginx process will restart with a different PID (as can be viewed through the Task Manager or type "cat nginx.pid" again)
-* **To test PHP**  
+* **To test PHP**
 	- cd /
 	- cd var/www/html
 	- sudo chmod o+w /var/www/html (to enable copying into this folder for later)
