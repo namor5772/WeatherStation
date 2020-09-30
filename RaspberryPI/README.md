@@ -22,7 +22,9 @@ Their only purpose is to setup bidirectional serial communications to the Arduin
 Go to https://www.raspberrypi.org/downloads/ and download the Raspberry PI imager (for Windows).
 
 With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the RASPBERRY PI OS (32BIT) option and then the above SD card. Finally press WRITE and wait.
+
 ![alt text](images/Imager.png "Raspberry Pi Imager")
+
 * You can now put the SD card into your Raspberry PI. Have a dongle for bluetooth keyboard and mouse. Also a HDMI monitor plugged in:
   - Follow prompts on first boot.
   - Change password to: RPIPWD
