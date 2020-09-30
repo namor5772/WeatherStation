@@ -21,7 +21,7 @@ Go to https://www.raspberrypi.org/downloads/ and download the Raspberry PI image
 
 With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the RASPBERRY PI OS (32BIT) option and then the above SD card. Finally press WRITE and wait.
 
-![alt text](images/Imager.png "IDE Main Screen")
+![alt text](images/Imager.png "Raspberry Pi Imager")
 
 * You can now put the SD card into your Raspberry PI. Have a dongle for bluetooth keyboard and mouse. Also a HDMI monitor plugged in:
   - Follow prompts on first boot.
@@ -55,11 +55,12 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 			○ The actual Python script is:
 			○ Client side:
 
-
+[Soft](#Software)
 
 
 
 ### Install nginx, mysql and php for Python 3 on the Raspberry PI:
+
 
 	• cd /
 	• pip3 --version
