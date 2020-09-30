@@ -40,27 +40,6 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 	- System => Hostname: HOSTNAME
 	- Interfaces Enable: **Camera, SSH, I2C, Serial Port, Remote GPIO**
 
-
-	• Install nginxl and php
-		○ As per the below link.
-		○ Note: mariadb seems to replace mysql
-		
-	• Setup Dataplicity:
-		○ As per below link.
-		○ Add this Raspberry PI as a new device, possibly deleting the one from the old Raspberry PI.
-		○ Follow the other steps if necessary.
-
-	• Download backup files needed for IOT. Python, cpp, scripts etc.
-		○ Use a dongle if cannot get WinSCP to work
-		○ You will need to create the home/pi/roman 
-		○ Run "sudo chmod -R 777 /var/www/html" to be able to add files to that directory.
-			○ The index.php file should have permissions -rwxrwxrwx root root
-		○ copy files detailed in the sections
-			○ The main rebooting script is:
-			○ The "container" Python script is:
-			○ The actual Python script is:
-			○ Client side:
-
 [Soft](#Software)
 
 ## Install nginx & php
@@ -132,3 +111,57 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 	- Save the file as index.php
 	- View http://192.168.0.12 again
 ![alt text](images/nginxphp.png "nginx php test")
+
+## Setup Dataplicity:
+
+Dataplicity is necessary so that the web server residing on the Raspberry Pi will be accessible from anywhere in the world with an arbitrary modern browser
+To enable the Raspberry Pi to be a node in my IOT. Dataplicity is a sort of VPN service.
+
+On an arbitrary PC (eg. Win10) with an arbitrary browser open
+https://www.dataplicity.com and if not already done so setup account. You will need:
+* An email address - say - SOMEADDRESS@gmail.com
+* A password - say - DATAPLICITYPWD
+*	Also setup your preferred DATAPLICITYNAME.
+
+This webpage is now your window to dataplicity. But you can also access its functionality with a Windows 10 app downloaded from the Microsoft Store
+![alt text](images/dataplicity1.png "dataplicity pic 1")
+
+You will need to install the Dataplicity agent by running the following on your Raspberry Pi terminal: 
+![alt text](images/dataplicity2.png "dataplicity pic 2")
+
+Once this has been done the Raspberry Pi should appear on the "Your Devices" menu above, as shown below:
+![alt text](images/dataplicity3.png "dataplicity pic 3")
+
+We need to upgrade the Dataplicity Service:
+Press the Settings Icon:
+![alt text](images/dataplicity4.png "dataplicity pic 4")
+
+To see:
+![alt text](images/dataplicity5.png "dataplicity pic 5")
+
+Press "Update settings" and "Profile" above to see:
+![alt text](images/dataplicity6.png "dataplicity pic 6")
+
+Select "Subscription" and choose the PRO plan. Also go to "Billing" and "Settings" and update/setup as necessary.
+
+To be able to SSH into the Raspberry PI select the device and on the Dataplicity terminal type:
+* su pi
+* RPIPWD (the Raspberry PI password)
+
+![alt text](images/dataplicity7.png "dataplicity pic 7")
+
+Assuming you open Dataplicity in the browser and **NOT** the app select
+![alt text](images/dataplicity8.png "dataplicity pic 8")
+
+To display:
+![alt text](images/dataplicity81.png "dataplicity pic 81")
+
+To enable the Raspberry PI website select the Wormhole slider and edit the website name to the extent possible:
+
+![alt text](images/dataplicity10.png "dataplicity pic 10")
+
+![alt text](images/dataplicity11.png "dataplicity pic 11")
+
+This determines the name of where my Raspberry PI an be reached from the WWW. In this case
+https://DATAPLICITYNAME-device.dataplicity.io
+
