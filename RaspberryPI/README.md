@@ -22,9 +22,7 @@ Their only purpose is to setup bidirectional serial communications to the Arduin
 Go to https://www.raspberrypi.org/downloads/ and download the Raspberry PI imager (for Windows).
 
 With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the RASPBERRY PI OS (32BIT) option and then the above SD card. Finally press WRITE and wait.
-
 ![alt text](images/Imager.png "Raspberry Pi Imager")
-
 * You can now put the SD card into your Raspberry PI. Have a dongle for bluetooth keyboard and mouse. Also a HDMI monitor plugged in:
   - Follow prompts on first boot.
   - Change password to: RPIPWD
@@ -67,7 +65,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 
 ## Install nginx & php
 
-* In a terminal window type
+* To install nginx In a terminal window type:
 	- cd /
 	- pip3 --version (just for information)
 	- sudo apt-get update
@@ -86,66 +84,51 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 		- Find the line "# location ~ \.php$ {"
 		- and add the following lines or remove # till the next "}"
 
-
 				include snippets/fastcgi-php.conf;
 				fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
-
-
 		-	It should look like
 
 				location ~ .php$ {
 					include snippets/fastcgi-php.conf;
 					fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
 					}
-
 		- Save the above edited file and reload
 			- sudo /etc/init.d/nginx reload 
-
 * To test the server:
 	- find the address on the Raspberry PI
 		- hostname -I
 		- it will give you something like 192.168.0.12
 		- type http://192.168.0.12 in the browser of another PC attached to the local network:
 ![alt text](images/nginxtest.png "nginx test")
+* To make nginx restart if it crashes non gracefully (it happens):
+	- Go to /lib/systemd/system and backup the nginx systemd unit (just in case)
+		- cd /
+		-	cd /lib/systemd/system
+		- sudo cp nginx.service nginx.service.old
+	- Add the following 2 lines at the end of the [Service] block of nginx.service
 
+				Restart=on-failure
+				RestartSec=9s
+	- Do this by typing: sudo nano nginx.service
+	- Save the edited nginx.service file: Ctrl-X, Y, Enter.
+	- load the new config:
+		- sudo systemctl daemon-reload
+	- To test kill nginx:
+		- cd /
+		- cd var/run
+		- cat nginx.pid (will give you the PID)
+		- sudo kill -9 PID
+		- The nginx process will restart with a different PID (as can be viewed through the Task Manager or type "cat nginx.pid" again)
+* To test PHP  
+	- cd /
+	- cd var/www/html
+	- sudo chmod o+w /var/www/html (to enable copying into this folder for later)
+	- sudo nano index.nginx-debian.html (being the default web page)
+	- Add the below lines just above the </body> tag:
 
-		
-		
-	• To make nginx restart if it crashes non gracefully (it has happened):
-		○ Go to /lib/systemd/system and backup the nginx systemd unit (just in case)
-			§ cd /
-			§ cd /lib/systemd/system
-			§ sudo cp nginx.service nginx.service.old
-		○  Add the following 2 lines at the end of the [Service] block of nginx.service
-				□ Restart=on-failure
-				□ RestartSec=9s
-			§ Do this by typing: sudo nano nginx.service
-			§ Saving the edited nginx.service file: Ctrl-X, Y, Enter.
-		○ load the new config:
-			§ sudo systemctl daemon-reload
-		○ To test kill nginx:
-			§ cd /
-			§ cd var/run
-			§ cat nginx.pid (will give you the PID)
-			§ sudo kill -9 PID
-			§ The nginx process will restart with a different PID (as can be viewed through the Task Manager)
-
-	• To test PHP  
-		○ cd /
-		○ cd var/www/html
-		○ sudo chmod o+w /var/www/html (to enable copying into this folder for later)
-		○ sudo nano index.nginx-debian.html (being the default web page)
-		○ Add the below lines just above the </body> tag:
-			§ <?php
-			§ phpinfo();
-			§ ?>
-		○ Save the file as index.php
-		○ View http://192.168.0.12 again
-
-		
-			location ~ .php$ {
-				include snippets/fastcgi-php.conf;
-				fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
-				}
-		
-
+			<?php
+				phpinfo();
+			?>
+	- Save the file as index.php
+	- View http://192.168.0.12 again
+![alt text](images/nginxphp.png "nginx php test")
