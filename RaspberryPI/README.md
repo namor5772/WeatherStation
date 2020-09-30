@@ -154,7 +154,7 @@ Assuming you open Dataplicity in the browser and **NOT** the app select
 ![alt text](images/dataplicity8.png "dataplicity pic 8")
 
 To display:
-![alt text](images/dataplicity81.png "dataplicity pic 81")
+![alt text](images/dataplicity9.png "dataplicity pic 81")
 
 To enable the Raspberry PI website select the Wormhole slider and edit the website name to the extent possible:
 
