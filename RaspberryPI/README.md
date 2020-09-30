@@ -165,3 +165,4 @@ To enable the Raspberry PI website select the Wormhole slider and edit the websi
 This determines the name of where my Raspberry PI an be reached from the WWW. In this case
 https://DATAPLICITYNAME-device.dataplicity.io
 
+TEST
