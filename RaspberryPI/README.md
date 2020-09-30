@@ -123,22 +123,28 @@ https://www.dataplicity.com and if not already done so setup account. You will n
 *	Also setup your preferred DATAPLICITYNAME.
 
 This webpage is now your window to dataplicity. But you can also access its functionality with a Windows 10 app downloaded from the Microsoft Store:
+
 ![alt text](images/Dataplicity1.png "dataplicity pic 1")
 
 You will need to install the Dataplicity agent by running the following on your Raspberry Pi terminal:
+
 ![alt text](images/Dataplicity2.png "dataplicity pic 2")
 
 Once this has been done the Raspberry Pi should appear on the "Your Devices" menu above, as shown below:
+
 ![alt text](images/Dataplicity3.png "dataplicity pic 3")
 
 We need to upgrade the Dataplicity Service:
 Press the Settings Icon:
+
 ![alt text](images/Dataplicity4.png "dataplicity pic 4")
 
 To see:
+
 ![alt text](images/Dataplicity5.png "dataplicity pic 5")
 
 Press "Update settings" and "Profile" above to see:
+
 ![alt text](images/Dataplicity6.png "dataplicity pic 6")
 
 Select "Subscription" and choose the PRO plan. Also go to "Billing" and "Settings" and update/setup as necessary.
@@ -150,9 +156,11 @@ To be able to SSH into the Raspberry PI select the device and on the Dataplicity
 ![alt text](images/Dataplicity7.png "dataplicity pic 7")
 
 Assuming you open Dataplicity in the browser and **NOT** the app select
+
 ![alt text](images/Dataplicity8.png "dataplicity pic 8")
 
 To display:
+
 ![alt text](images/Dataplicity9.png "dataplicity pic 81")
 
 To enable the Raspberry PI website select the Wormhole slider and edit the website name to the extent possible:
