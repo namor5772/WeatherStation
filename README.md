@@ -23,6 +23,8 @@ The hardware is based on a Raspberry Pi 3A+ and an Arduino Leonardo together wit
 The wifi modem and servo are attched by loomed 2 metre cables to the Vero board. The temperatue, pressure and humidity sensor is similarily attached with 1 metre cables. The two RJ11 terminated 3 metre cables from the rainfall, windspeed and wind direction sensors also attach to the Vero board.
 The Vero board circuit logic was designed in TinyCAD and its layout in VeeCAD.
 
+![alt text](images/Imager.png "IDE Main Screen")
+
 ## List of parts
 #  
 ### Core components
