@@ -74,8 +74,9 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 	- sudo apt-get install nginx
 	- sudo /etc/init.d/nginx start
 	- sudo netstat -an | grep LISTEN | grep :80
-		- This checks that a service is listening on port 80. It should show something like:		
+		- This checks that a service is listening on port 80. It should show something like:				
 ![alt text](images/nginx.png "nginx service listening")
+
 	- sudo service nginx restart (It doesn't hurt)
 	- sudo apt install php-fpm
 	- cd /etc/nginx
@@ -85,28 +86,28 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 		- Find the line "# location ~ \.php$ {"
 		- and add the following lines or remove # till the next "}"
 
-		include snippets/fastcgi-php.conf;
 
-		fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
-
-
+				include snippets/fastcgi-php.conf;
+				fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
 
 
 		-	It should look like
 
 				location ~ .php$ {
 					include snippets/fastcgi-php.conf;
-					fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+					fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
 					}
 
 		- Save the above edited file and reload
 			- sudo /etc/init.d/nginx reload 
 
-	* To test the server:
-		○ find the address on the Raspberry PI
-			§ hostname -I
-		○ it will give you something like 192.168.0.12
-		○ type http://192.168.0.12 in the browser of another PC attached to the local network:
+* To test the server:
+	- find the address on the Raspberry PI
+		- hostname -I
+		- it will give you something like 192.168.0.12
+		- type http://192.168.0.12 in the browser of another PC attached to the local network:
+![alt text](images/nginxtest.png "nginx test")
+
 
 		
 		
