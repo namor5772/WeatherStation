@@ -84,21 +84,23 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 		- Add "index.php" after "index" in above line
 		- Find the line "# location ~ \.php$ {"
 		- and add the following lines or remove # till the next "}"
-			- include snippets/fastcgi-php.conf;
-			- fastcgi_pass unix:/var/run/php/php7.3-fpm.sock; (reflecting version of php)
+
+		include snippets/fastcgi-php.conf;
+
+		fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+
+
+
+
 		-	It should look like
-			location ~ .php$ {
-				include snippets/fastcgi-php.conf;
-				fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
-				}
 
 				location ~ .php$ {
-				include snippets/fastcgi-php.conf;
-				fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
-				}
+					include snippets/fastcgi-php.conf;
+					fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+					}
 
-	○ Save the above edited file and reload
-		§ sudo /etc/init.d/nginx reload 
+		- Save the above edited file and reload
+			- sudo /etc/init.d/nginx reload 
 
 	* To test the server:
 		○ find the address on the Raspberry PI
