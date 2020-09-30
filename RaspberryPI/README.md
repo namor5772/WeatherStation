@@ -122,7 +122,7 @@ https://www.dataplicity.com and if not already done so setup account. You will n
 * A password - say - DATAPLICITYPWD
 *	Also setup your preferred DATAPLICITYNAME.
 
-This webpage is now your window to dataplicity. But you can also access its functionality with a Windows 10 app downloaded from the Microsoft Store
+This webpage is now your window to dataplicity. But you can also access its functionality with a Windows 10 app downloaded from the Microsoft Store:
 ![alt text](images/Dataplicity1.png "dataplicity pic 1")
 
 You will need to install the Dataplicity agent by running the following on your Raspberry Pi terminal:
