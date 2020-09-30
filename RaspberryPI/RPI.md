@@ -21,7 +21,7 @@ Go to https://www.raspberrypi.org/downloads/ and download the Raspberry PI image
 
 With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the RASPBERRY PI OS (32BIT) option and then the above SD card. Finally press WRITE and wait.
 
-![xxx](RaspberryPI/Imager.png?raw=true)
+[xxx](RaspberryPI/Imager.png?raw=true)
 
 * You can now put the SD card into your Raspberry PI. Have a dongle for bluetooth keyboard and mouse. Also a HDMI monitor plugged in:
   - Follow prompts on first boot.
