@@ -41,8 +41,6 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 	- Interfaces Enable: **Camera, SSH, I2C, Serial Port, Remote GPIO**
 
 
-
-
 	• Install nginxl and php
 		○ As per the below link.
 		○ Note: mariadb seems to replace mysql
@@ -67,7 +65,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 
 ## Install nginx & php
 
-* To install nginx In a terminal window type:
+* **To install nginx, in a terminal window type:**
 	- cd /
 	- pip3 --version (just for information)
 	- sudo apt-get update
@@ -96,13 +94,13 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 					}
 		- Save the above edited file and reload
 			- sudo /etc/init.d/nginx reload 
-* To test the server:
+* **To test the server:**
 	- find the address on the Raspberry PI
 		- hostname -I
 		- it will give you something like 192.168.0.12
 		- type http://192.168.0.12 in the browser of another PC attached to the local network:
 ![alt text](images/nginxtest.png "nginx test")
-* To make nginx restart if it crashes non gracefully (it happens):
+* **To make nginx restart if it crashes non gracefully (it happens):**
 	- Go to /lib/systemd/system and backup the nginx systemd unit (just in case)
 		- cd /
 		-	cd /lib/systemd/system
@@ -121,7 +119,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 		- cat nginx.pid (will give you the PID)
 		- sudo kill -9 PID
 		- The nginx process will restart with a different PID (as can be viewed through the Task Manager or type "cat nginx.pid" again)
-* To test PHP  
+* **To test PHP**  
 	- cd /
 	- cd var/www/html
 	- sudo chmod o+w /var/www/html (to enable copying into this folder for later)
