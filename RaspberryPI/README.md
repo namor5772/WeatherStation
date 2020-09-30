@@ -5,7 +5,6 @@ We are using a Raspberry PI 3A+ and run all scripts using Python 3 which we assu
 
 [Install](#Install_nginx)
 
-
 ## Hardware
 
 Raspberry PI 3A+. We are using this version since it uses less power, is cheaper, has a smaller form factor but has wifi and the one USB port is sufficient.
@@ -18,7 +17,7 @@ It is powered by 5.2V and when in production the one USB connection is used to p
 
 Their only purpose is to setup bidirectional serial communications to the Arduino.
 
-## Software
+## SD Card
 
 Go to https://www.raspberrypi.org/downloads/ and download the Raspberry PI imager (for Windows).
 
@@ -28,25 +27,31 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 
 * You can now put the SD card into your Raspberry PI. Have a dongle for bluetooth keyboard and mouse. Also a HDMI monitor plugged in:
   - Follow prompts on first boot.
-  - Change password to: xxxxxxxx
-  - Select WiFi Network: xxxxxxxx, Password: xxxxxxxx
+  - Change password to: RPIPWD
+  - Select WiFi Network: WIFISSID, Password: WIFIPWD
 	- Make sure wifi working to enable software update - takes ages!
 	- Restart when requested.
-* In terminal window type
-		○ sudo apt update
-		○ sudo apt install python3 idle3
-		○ as at 30/09/2020 this installs Python 3.7.3 with IDLE 3.7.3 and Tk 8.6.9.
-			○ This information is available in the GUI from the Application Menu => Programming => Python 3 (IDLE) => Help => About IDLE
-	• Install nginx, mysql and php for Python 3 on the Raspberry PI:
+* In a terminal window type
+	- sudo apt update
+	- sudo apt install python3 idle3
+	-	as at 30/09/2020 this installs Python 3.7.3 with IDLE 3.7.3 and Tk 8.6.9.
+		- This information is available in the GUI from the Application Menu => Programming => Python 3 (IDLE) => Help => About IDLE
+* Set Raspberry Pi Configuration, only changing:
+	- System => Hostname: HOSTNAME
+	- Interfaces Enable: **Camera, SSH, I2C, Serial Port, Remote GPIO**
+
+
+
+
+	• Install nginxl and php
 		○ As per the below link.
 		○ Note: mariadb seems to replace mysql
-	• Set Raspberry Pi Configuration, only changing:
-		○ System => Hostname: rp3b
-		○ Interfaces Enable: Camera, SSH, I2C, Serial Port, Remote GPIO
+		
 	• Setup Dataplicity:
 		○ As per below link.
 		○ Add this Raspberry PI as a new device, possibly deleting the one from the old Raspberry PI.
 		○ Follow the other steps if necessary.
+
 	• Download backup files needed for IOT. Python, cpp, scripts etc.
 		○ Use a dongle if cannot get WinSCP to work
 		○ You will need to create the home/pi/roman 
@@ -60,40 +65,42 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 
 [Soft](#Software)
 
+## Install nginx & php
 
-
-### Install_nginx
-### Install nginx, mysql and php for Python 3 on the Raspberry PI:
-
-
-
-	• cd /
-	• pip3 --version
-	• sudo apt-get update
-	• sudo apt-get install nginxhostname -I
-	• sudo /etc/init.d/nginx start
-	• sudo netstat -an | grep LISTEN | grep :80
-		○ To check that a service is listening on port 80. It should show something like:
-	• sudo service nginx restart
-		○ To restart NGINX. It doesn't hurt!
-	• sudo apt install php-fpm
-	• cd /etc/nginx
-	• sudo nano sites-enabled/default
-		○ Find the line "index index.html index.htm;"
-		○ Add "index.php" after "index" in above line
-		○ Find the line "# location ~ \.php$ {"
-		○ and add the following lines or remove # till the next "}"
-			§ include snippets/fastcgi-php.conf;
-			§ fastcgi_pass unix:/var/run/php/php7.3-fpm.sock; (reflecting version of php)
-		○ It should look like
+* In a terminal window type
+	- cd /
+	- pip3 --version (just for information)
+	- sudo apt-get update
+	- sudo apt-get install nginx
+	- sudo /etc/init.d/nginx start
+	- sudo netstat -an | grep LISTEN | grep :80
+		- This checks that a service is listening on port 80. It should show something like:		
+![alt text](images/nginx.png "nginx service listening")
+	- sudo service nginx restart (It doesn't hurt)
+	- sudo apt install php-fpm
+	- cd /etc/nginx
+	- sudo nano sites-enabled/default
+		- Find the line "index index.html index.htm;"
+		- Add "index.php" after "index" in above line
+		- Find the line "# location ~ \.php$ {"
+		- and add the following lines or remove # till the next "}"
+			- include snippets/fastcgi-php.conf;
+			- fastcgi_pass unix:/var/run/php/php7.3-fpm.sock; (reflecting version of php)
+		-	It should look like
 			location ~ .php$ {
 				include snippets/fastcgi-php.conf;
-				fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+				fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
 				}
-		○ Save the above edited file and reload
-			§ sudo /etc/init.d/nginx reload 
 
-	• To test the server:
+				location ~ .php$ {
+				include snippets/fastcgi-php.conf;
+				fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+				}
+
+	○ Save the above edited file and reload
+		§ sudo /etc/init.d/nginx reload 
+
+	* To test the server:
 		○ find the address on the Raspberry PI
 			§ hostname -I
 		○ it will give you something like 192.168.0.12
@@ -133,5 +140,9 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 		○ View http://192.168.0.12 again
 
 		
+			location ~ .php$ {
+				include snippets/fastcgi-php.conf;
+				fastcgi_pass unix:/var/run/php/php7.0-fpm.sock;
+				}
 		
 
