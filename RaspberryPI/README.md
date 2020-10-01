@@ -227,7 +227,7 @@ These files will need to be loaded onto the Raspberry PI into three particular d
 * cd home/pi
 * mkdir roman (or your own name)
 
-All the files are listed here with their required directories and will be explained and/or setup in the following sections. You can do this now with the supplied links if you are using Git from the Raspberry PI or any other method like a USB stick or WinSCP from a Windows 10 PC.
+All the files are listed here with their required directories and will be explained and/or setup in the following sections. You can download them now with the supplied links if you are using Git from the Raspberry PI or any other method like a USB stick or WinSCP from a Windows 10 PC.
 
 | File | Directory | Description |
 | --- | --- | --- |
@@ -236,21 +236,18 @@ All the files are listed here with their required directories and will be explai
 | [wwwRP.py](data/wwwRP.py) | home/pi/roman | main python script always restarts after crash |
 | [reboot.sh](data/reboot.sh) | home/pi/roman | script that forces reboot |
 | [take_photo_arg.sh](data/take_photo_arg.sh) | home/pi/roman | script that takes photo |
-| [led0_heartbeat.sh](data/led0_heartbeat.sh) | home/pi/roman | heartbeat flashes onboard led0  |
-| [led1_heartbeat.sh](data/led1_heartbeat.sh) | home/pi/roman | heartbeat flashes onboard led1  |
-| [led0_timer_500.sh](data/led0_timer_500.sh) | home/pi/roman | flashes onboard led0 for 0.5 sec |
-| [led1_timer_500.sh](data/led1_timer_500.sh) | home/pi/roman | flashes onboard led1 for 0.5 sec |
-| [led0_off.sh](data/led0_off.sh) | home/pi/roman | turns off led0 |
-| [led1_off.sh](data/led1_off.sh) | home/pi/roman | turns off led1 |
-
-| [reboot.sh](data/) | home/pi/roman |  |
-| [reboot.sh](data/) | home/pi/roman |  |
-| [reboot.sh](data/) | home/pi/roman |  |
-| [reboot.sh](data/) | home/pi/roman |  |
-| [reboot.sh](data/) | home/pi/roman |  |
-| [reboot.sh](data/) | home/pi/roman |  |
-| [reboot.sh](data/) | home/pi/roman |  |
-| [reboot.sh](data/) | home/pi/roman |  |
+| [cputemp.sh](data/cputemp.sh) | home/pi/roman | measures CPU temperature |
+| [led0_off.sh](data/led0_off.sh) | home/pi/roman | turns off led0 - to reduce light from IOT |
+| [led1_off.sh](data/led1_off.sh) | home/pi/roman | turns off led1 - to reduce light from IOT |
+| [led0_heartbeat.sh](data/led0_heartbeat.sh) | home/pi/roman | heartbeat flashes onboard led0 - for fun |
+| [led1_heartbeat.sh](data/led1_heartbeat.sh) | home/pi/roman | heartbeat flashes onboard led1 - for fun|
+| [led0_timer_500.sh](data/led0_timer_500.sh) | home/pi/roman | flashes onboard led0 for 0.5 sec - for fun|
+| [led1_timer_500.sh](data/led1_timer_500.sh) | home/pi/roman | flashes onboard led1 for 0.5 sec - for fun|
+| [numbers_solution.sh](data/numbers_solution.sh) | home/pi/roman | script for running numbers game program - for fun |
+| [numc.cxx](data/numc.cxx) | home/pi/roman | C source code for numbers game program - for fun |
+| [numc](data/numc.cxx) | home/pi/roman | executable for numbers game program - for fun |
+| [index.php](data/index.php) | var/www/html | php file that exposes the Raspberry PI to the www |
+| [LDG.jpg](data/LDG.jpg) | var/www/html | just a photo that the website can display - for fun |
 
 ## **The main rebooting script**
 
