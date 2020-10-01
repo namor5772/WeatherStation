@@ -248,6 +248,8 @@ All the files are listed here with their required directories and will be explai
 | [numc](data/numc) | home/pi/roman | executable for numbers game program - for fun |
 | [index.php](data/index.php) | var/www/html | php file that exposes the Raspberry PI to the www |
 | [LDG.jpg](data/LDG.jpg) | var/www/html | just a photo that the website can display - for fun |
+| [wwwRP_basic.py](data/wwwRP_basic.py) | home/pi/roman | Raspberry PI only test version of wwwRP.py |
+| [index_basic.php](data/index_basic.php) | var/www/html | Raspberry PI only test version of index.py |
 
 ## **The main rebooting script**
 
