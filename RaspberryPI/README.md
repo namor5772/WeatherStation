@@ -234,12 +234,23 @@ All the files are listed here with their required directories and will be explai
 | [launcher.sh](data/launcher.sh) | home/pi | script that runs on reboot |
 | [forever.py](data/forever.py) | home/pi/roman | never stopping python script |
 | [wwwRP.py](data/wwwRP.py) | home/pi/roman | main python script always restarts after crash |
+| [reboot.sh](data/reboot.sh) | home/pi/roman | script that forces reboot |
+| [take_photo_arg.sh](data/take_photo_arg.sh) | home/pi/roman | script that takes photo |
+| [led0_heartbeat.sh](data/led0_heartbeat.sh) | home/pi/roman | heartbeat flashes onboard led0  |
+| [led1_heartbeat.sh](data/led1_heartbeat.sh) | home/pi/roman | heartbeat flashes onboard led1  |
+| [led0_timer_500.sh](data/led0_timer_500.sh) | home/pi/roman | flashes onboard led0 for 0.5 sec |
+| [led1_timer_500.sh](data/led1_timer_500.sh) | home/pi/roman | flashes onboard led1 for 0.5 sec |
+| [led0_off.sh](data/led0_off.sh) | home/pi/roman | turns off led0 |
+| [led1_off.sh](data/led1_off.sh) | home/pi/roman | turns off led1 |
 
-[AAA](images/Imager.png)
-
-[BBB](wwwRP.py)
-
-| [CCC](ref:forever.py) | A | B |
+| [reboot.sh](data/) | home/pi/roman |  |
+| [reboot.sh](data/) | home/pi/roman |  |
+| [reboot.sh](data/) | home/pi/roman |  |
+| [reboot.sh](data/) | home/pi/roman |  |
+| [reboot.sh](data/) | home/pi/roman |  |
+| [reboot.sh](data/) | home/pi/roman |  |
+| [reboot.sh](data/) | home/pi/roman |  |
+| [reboot.sh](data/) | home/pi/roman |  |
 
 ## **The main rebooting script**
 
