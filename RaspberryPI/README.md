@@ -229,8 +229,11 @@ These files will need to be loaded onto the Raspberry PI into three particular d
 
 All the files are listed here with their required directories and will be explained and/or setup in the following sections. You can do this now with the supplied links if you are using Git from the Raspberry PI or any other method like a USB stick or WinSCP from a Windows 10 PC.
 
-| File link | Directory | Description |
+| File | Directory | Description |
 | --- | --- | --- |
+| [launcher.sh](data/launcher.sh) | home/pi | script that runs on reboot |
+| [forever.py](data/forever.py) | home/pi/roman | never stopping python script |
+| [wwwRP.py](data/wwwRP.py) | home/pi/roman | main python script always restarts after crash |
 
 [AAA](images/Imager.png)
 
