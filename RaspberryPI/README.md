@@ -232,8 +232,6 @@ All the files are listed here with their required directories and will be explai
 | File link | Directory | Description |
 | --- | --- | --- |
 
-RaspberryPI\images\Imager.png
-
 [AAA](images/Imager.png)
 
 [BBB](wwwRP.py)
