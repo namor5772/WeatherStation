@@ -236,7 +236,8 @@ RaspberryPI\images\Imager.png
 
 [AAA](images/Imager.png)
 
-| [BBB](ref:wwwRP.py) | A | B |
+[BBB](wwwRP.py)
+
 | [CCC](ref:forever.py) | A | B |
 
 ## **The main rebooting script**
