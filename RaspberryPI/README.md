@@ -217,6 +217,28 @@ If you then want to use the GUI temporarily (between reboots) type:
 
 * startx
 
+## **Code files**
+
+Up to this point we have configured the Raspberry Pi basically as we want it for the IOT weather station. Additional custom scripts, python code and php scripts are necessary to complete the setup together with any permissions/setups.
+
+These files will need to be loaded onto the Raspberry PI into three particular directories. One of these directories does not natively exist and must be created:
+
+* cd /
+* cd home/pi
+* mkdir roman (or your own name)
+
+All the files are listed here with their required directories and will be explained and/or setup in the following sections. You can do this now with the supplied links if you are using Git from the Raspberry PI or any other method like a USB stick or WinSCP from a Windows 10 PC.
+
+| File link | Directory | Description |
+| --- | --- | --- |
+
+RaspberryPI\images\Imager.png
+
+[AAA](RaspberryPI\images\Imager.png)
+
+| [BBB](ref:wwwRP.py) | A | B |
+| [CCC](ref:forever.py) | A | B |
+
 ## **The main rebooting script**
 
 If the main Python code that controls the weather station crashes then interfacing the Raspberry PI is compromised. To mitigate this the launcher.sh script is run on reboot which restarts the main code as necessary.
