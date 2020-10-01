@@ -234,7 +234,7 @@ All the files are listed here with their required directories and will be explai
 
 RaspberryPI\images\Imager.png
 
-[AAA](RaspberryPI\images\Imager.png)
+[AAA](images/Imager.png)
 
 | [BBB](ref:wwwRP.py) | A | B |
 | [CCC](ref:forever.py) | A | B |
