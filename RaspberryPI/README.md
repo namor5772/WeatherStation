@@ -186,12 +186,13 @@ This determines the name of where the Raspberry PI an be reached from the wolrd 
 
 The Raspberry Pi is intended to be used offsite with a wifi dongle. The dongle is assumed to be constantly on by default with the connection automatically reestablished on reboot.
 
-from the GUI select and setup the connection to the dongle:
+From the GUI select and setup the connection to the dongle.
+
 In the console you can see the connection by typing iwconfig.
 
 ![alt text](images/Internet1.png "iwconfig")
 
-you can confirm that your wifi settings are in the config file by typing in the console:
+You can confirm that your wifi settings are in the config file by typing in the console:
 
 * sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
