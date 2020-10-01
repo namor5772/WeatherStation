@@ -216,3 +216,29 @@ Finally setup your Raspberry PI to boot into the command line shell, via the GUI
 If you then want to use the GUI temporarily (between reboots) type:
 
 * startx
+
+## **The main rebooting script**
+
+If the main Python code that controls the weather station crashes then interfacing the Raspberry PI is compromised. To mitigate this the launcher.sh script is run on reboot which restarts the main code as necessary.
+
+home/pi/launcher.sh
+#!bin/sh
+cd /
+cd home/pi/roman
+python3 forever.py wwwRP.py
+cd /
+
+to edit it from the terminal type
+	• cd /sudo 
+	• cd home/pi
+	• sudo nano launcher.sh
+
+make this file executable from the terminal
+	• cd /
+	• cd home/pi
+	• sudo chmod 0775 launcher.sh
+
+and confirm the permissions
+	• cd /
+	• cd home/pi
+	• stat launcher.sh
