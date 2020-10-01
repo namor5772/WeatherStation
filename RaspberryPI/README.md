@@ -245,7 +245,7 @@ All the files are listed here with their required directories and will be explai
 | [led1_timer_500.sh](data/led1_timer_500.sh) | home/pi/roman | flashes onboard led1 for 0.5 sec - for fun|
 | [numbers_solution.sh](data/numbers_solution.sh) | home/pi/roman | script for running numbers game program - for fun |
 | [numc.cxx](data/numc.cxx) | home/pi/roman | C source code for numbers game program - for fun |
-| [numc](data/numc.cxx) | home/pi/roman | executable for numbers game program - for fun |
+| [numc](data/numc) | home/pi/roman | executable for numbers game program - for fun |
 | [index.php](data/index.php) | var/www/html | php file that exposes the Raspberry PI to the www |
 | [LDG.jpg](data/LDG.jpg) | var/www/html | just a photo that the website can display - for fun |
 
