@@ -207,14 +207,12 @@ If there are problems delete the .wpa_supplicant.conf.swp hidden file from that 
 * ls -a
 * sudo rm .wpa_supplicant.conf.swp
 
-then
+then if required to view and/or modify wpa_supplicant.conf:
 
 * sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
-if required to view and/or modify wpa_supplicant.conf
-
 Finally setup your Raspberry PI to boot into the command line shell, via the GUI Raspberry PI Configuration menu.
 
-If you want to use GUI temporarily (between reboots) type:
+If you then want to use the GUI temporarily (between reboots) type:
 
 * startx
