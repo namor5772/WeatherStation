@@ -106,6 +106,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
     * The nginx process will restart with a different PID (as can be viewed through the Task Manager or type "cat nginx.pid" again)
 
 * **To test PHP**
+
   * cd /
   * cd var/www/html
   * sudo chmod o+w /var/www/html (to enable copying into this folder for later)
@@ -180,3 +181,39 @@ To enable the Raspberry PI website select the Wormhole slider and edit the websi
 ![alt text](images/Dataplicity11.png "dataplicity pic 11")
 
 This determines the name of where the Raspberry PI an be reached from the wolrd wide web. In this case https://DATAPLICITYNAME-device.dataplicity.io
+
+## **Internet on the Raspberry PI**
+
+The Raspberry Pi is intended to be used offsite with a wifi dongle. The dongle is assumed to be constantly on by default with the connection automatically reestablished on reboot.
+
+from the GUI select and setup the connection to the dongle:
+In the console you can see the connection by typing iwconfig.
+
+![alt text](images/Internet1.png "iwconfig")
+
+you can confirm that your wifi settings are in the config file by typing in the console:
+
+* sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+which displays:
+
+![alt text](images/Internet2.png "wpa_supplicant")
+
+If there are problems delete the .wpa_supplicant.conf.swp hidden file from that directory. You can see and delete it by typing:
+
+* cd /
+* cd etc/wpa_supplicant
+* ls -a
+* sudo rm .wpa_supplicant.conf.swp
+
+then
+
+* sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+if required to view and/or modify wpa_supplicant.conf
+
+Finally setup your Raspberry PI to boot into the command line shell, via the GUI Raspberry PI Configuration menu.
+
+If you want to use GUI temporarily (between reboots) type:
+
+* startx
