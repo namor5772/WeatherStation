@@ -3,8 +3,6 @@
 The goal is to launch a python script on reboot of the Raspberry PI and have the script restart if it crashes.
 We are using a Raspberry PI 3A+ and run all scripts using Python 3 which we assume has been installed.
 
-[Install](#Install_nginx)
-
 ## **Hardware**
 
 Raspberry PI 3A+. We are using this version since it uses less power, is cheaper, has a smaller form factor but has wifi and the one USB port is sufficient.
@@ -35,13 +33,13 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 * In a terminal window type
   * sudo apt update
   * sudo apt install python3 idle3
-  * as at 30/09/2020 this installs Python 3.7.3 with IDLE 3.7.3 and Tk 8.6.9.
+    * as at 30/09/2020 this installs Python 3.7.3 with IDLE 3.7.3 and Tk 8.6.9.
     * This information is available in the GUI from the Application Menu => Programming => Python 3 (IDLE) => Help => About IDLE
 * Set Raspberry Pi Configuration, only changing:
   * System => Hostname: HOSTNAME
   * Interfaces Enable: **Camera, SSH, I2C, Serial Port, Remote GPIO**
 
-[Soft](#Software)
+[Hardware](#Hardware)
 
 ## **Install nginx & php**
 
@@ -128,9 +126,10 @@ Dataplicity is necessary so that the web server residing on the Raspberry Pi wil
 
 On an arbitrary PC (eg. Win10) with an arbitrary browser open
 https://www.dataplicity.com and if not already done so setup account. You will need:
+
 * An email address - say - SOMEADDRESS@gmail.com
 * A password - say - DATAPLICITYPWD
-*	Also setup your preferred DATAPLICITYNAME.
+* Also setup your preferred DATAPLICITYNAME.
 
 This webpage is now your window to dataplicity. But you can also access its functionality with a Windows 10 app downloaded from the Microsoft Store:
 
@@ -160,6 +159,7 @@ Press "Update settings" and "Profile" above to see:
 Select "Subscription" and choose the PRO plan. Also go to "Billing" and "Settings" and update/setup as necessary.
 
 To be able to SSH into the Raspberry PI select the device and on the Dataplicity terminal type:
+
 * su pi
 * RPIPWD (the Raspberry PI password)
 
@@ -179,5 +179,4 @@ To enable the Raspberry PI website select the Wormhole slider and edit the websi
 
 ![alt text](images/Dataplicity11.png "dataplicity pic 11")
 
-This determines the name of where the Raspberry PI an be reached from the wolrd wide web. In this case
-https://DATAPLICITYNAME-device.dataplicity.io
+This determines the name of where the Raspberry PI an be reached from the wolrd wide web. In this case https://DATAPLICITYNAME-device.dataplicity.io
