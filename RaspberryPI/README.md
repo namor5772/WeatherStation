@@ -45,7 +45,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 
 ## **Install nginx & php**
 
-* **To install nginx, in a terminal window type:**
+* **install nginx & php, in a terminal window type:**
 
   * cd /
   * pip3 --version (just for information)
