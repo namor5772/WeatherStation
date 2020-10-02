@@ -229,6 +229,8 @@ These files will need to be loaded onto the Raspberry PI into three particular d
 
 All the files are listed here with their required directories and will be explained and/or setup in the following sections. You can download them now with the supplied links if you are using Git from the Raspberry PI or any other method like a USB stick or WinSCP from a Windows 10 PC.
 
+When copying index.php you might need to first delete the already existing file with the same name. This will prevent problems with permissions if using WinSCP.
+
 | File | Directory | Description |
 | --- | --- | --- |
 | [launcher.sh](data/launcher.sh) | home/pi | script that runs on reboot |
@@ -251,28 +253,24 @@ All the files are listed here with their required directories and will be explai
 | [wwwRP_basic.py](data/wwwRP_basic.py) | home/pi/roman | Raspberry PI only test version of wwwRP.py |
 | [index_basic.php](data/index_basic.php) | var/www/html | Raspberry PI only test version of index.py |
 
-## **The main rebooting script**
+## **Main scripts**
 
-If the main Python code that controls the weather station crashes then interfacing the Raspberry PI is compromised. To mitigate this the launcher.sh script is run on reboot which restarts the main code as necessary.
+If the main Python code that controls the weather station crashes then interfacing the Raspberry PI is compromised. To mitigate this the launcher.sh script is run on reboot, this in turn runs forever.py which will call the main python code wwwRP.py and restart it if the latter crashes. Various setups detailed below need to be performed on these.
 
-home/pi/launcher.sh
-#!bin/sh
-cd /
-cd home/pi/roman
-python3 forever.py wwwRP.py
-cd /
+from the terminal type:
 
-to edit it from the terminal type
-	• cd /sudo 
-	• cd home/pi
-	• sudo nano launcher.sh
+* cd /sudo
+* cd home/pi
+* sudo nano launcher.sh
 
-make this file executable from the terminal
-	• cd /
-	• cd home/pi
-	• sudo chmod 0775 launcher.sh
+make this file executable
+
+* cd /
+* cd home/pi
+* sudo chmod 0775 launcher.sh
 
 and confirm the permissions
-	• cd /
-	• cd home/pi
-	• stat launcher.sh
+
+* cd /
+* cd home/pi
+* stat launcher.sh
