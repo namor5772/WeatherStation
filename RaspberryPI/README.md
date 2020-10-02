@@ -322,5 +322,9 @@ Start Idle with the Python 3.7.3 Shell from Programming => Python 3 (IDLE).
 Open and edit/run the /home/pi/roman/wwwRP.py script. 
 
 **IMPORTANT:** Do not run www.RP.py from IDLE when it is already running in the background through crontab. This will cause mysterious serial comm errors.
- 
 
+Finally to run the (fun) numc executable type:
+
+* cd /
+* cd home/pi/roman
+* sudo chmod 0777 numc
