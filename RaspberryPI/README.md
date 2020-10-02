@@ -22,7 +22,7 @@ In the following sections we detail precisely how to add and configure all the s
 
 ## **SD Card**
 
-Go to https://www.raspberrypi.org/downloads/ and download the Raspberry PI imager (for Windows).
+Go to <https://www.raspberrypi.org/downloads> and download the Raspberry PI imager (for Windows).
 
 With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the RASPBERRY PI OS (32BIT) option and then the above SD card. Finally press WRITE and wait.
 
@@ -61,18 +61,18 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
     * sudo nano sites-enabled/default
     * Find the line "index index.html index.htm;"
     * Add "index.php" after "index" in above line
-    * Find the line "# location ~ \.php$ {"
+    * Find the line "# location ~ \\.php$ {"
     * and add the following lines or remove # till the next "}"
 
-			include snippets/fastcgi-php.conf;
-			fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+          include snippets/fastcgi-php.conf;
+          fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
 
     * It should look like
 
-			location ~ .php$ {
-				include snippets/fastcgi-php.conf;
-				fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
-			}
+          location ~ \.php$ {
+            include snippets/fastcgi-php.conf;
+            fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+          }
 
     * Save the above edited file and reload
       * sudo /etc/init.d/nginx reload
@@ -82,7 +82,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * find the address on the Raspberry PI
     * hostname -I
   * it will give you something like 192.168.0.12
-  * type http://192.168.0.12 in the browser of another PC attached to the local network:
+  * type <http://192.168.0.12> in the browser of another PC attached to the local network:
 ![alt text](images/nginxtest.png "nginx test")
 
 * **To make nginx restart if it crashes non gracefully (it happens):**
@@ -93,8 +93,8 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
     * sudo cp nginx.service nginx.service.old
   * Add the following 2 lines at the end of the [Service] block of nginx.service
 
-				Restart=on-failure
-				RestartSec=9s
+        Restart=on-failure
+        RestartSec=9s
 
     * Do this by typing: sudo nano nginx.service
     * Save the edited nginx.service file: Ctrl-X, Y, Enter.
@@ -113,14 +113,14 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * cd var/www/html
   * sudo chmod o+w /var/www/html (to enable copying into this folder for later)
   * sudo nano index.nginx-debian.html (being the default web page)
-  * Add the below lines just above the </body> tag:
+  * Add the below lines just above the body tag:
 
-			<?php
-				phpinfo();
-			?>
+        <?php
+          phpinfo();
+        ?>
 
   * Save the file as index.php
-  * View http://192.168.0.12 again
+  * View <http://192.168.0.12> again
 ![alt text](images/nginxphp.png "nginx php test")
 
 ## **Setup Dataplicity:**
@@ -182,7 +182,7 @@ To enable the Raspberry PI website select the Wormhole slider and edit the websi
 
 ![alt text](images/Dataplicity11.png "dataplicity pic 11")
 
-This determines the name of where the Raspberry PI an be reached from the wolrd wide web. In this case https://DATAPLICITYNAME-device.dataplicity.io
+This determines the name of where the Raspberry PI an be reached from the wolrd wide web. In this case <https://DATAPLICITYNAME-device.dataplicity.io>
 
 ## **Internet on the Raspberry PI**
 
