@@ -7,7 +7,7 @@ We are using a Raspberry PI 3A+ and run all scripts using Python 3 which we assu
 
 Raspberry PI 3A+. We are using this version since it uses less power, is cheaper, has a smaller form factor but has wifi and the one USB port is sufficient.
 
-It is powered by 5.2V and when in production the one USB connection is used to power the Arduino Leonardo board. Apart from the above the only connections are via 4 GPIO pins.
+It is powered by 5.2V and when in production the one USB connection is used to power the Arduino Leonardo board. Apart from these the only other connections are 4 GPIO pins.
 
 * GPIO 1 - 3.3V
 * GPIO 6 - GROUND
@@ -15,6 +15,10 @@ It is powered by 5.2V and when in production the one USB connection is used to p
 * GPIO 10 - UART RXD
 
 Their only purpose is to setup bidirectional serial communications to the Arduino.
+
+By explicit design there are no sensors (apart from the camera) attached to the Raspberry PI. Its "only" purpose is to interface to the world via a website interface, ask the Arduino for sensor readings as well as act on its behalf and also store collected data.
+
+In the following sections we detail precisely how to add and configure all the software that is needed on this Raspberry PI. Once completed we will have an SD card that boots to the intended IOT environment.
 
 ## **SD Card**
 
@@ -38,8 +42,6 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 * Set Raspberry Pi Configuration, only changing:
   * System => Hostname: HOSTNAME
   * Interfaces Enable: **Camera, SSH, I2C, Serial Port, Remote GPIO**
-
-[Hardware](#Hardware)
 
 ## **Install nginx & php**
 
@@ -253,7 +255,7 @@ When copying index.php you might need to first delete the already existing file 
 | [wwwRP_basic.py](data/wwwRP_basic.py) | home/pi/roman | Raspberry PI only test version of wwwRP.py |
 | [index_basic.php](data/index_basic.php) | var/www/html | Raspberry PI only test version of index.py |
 
-## **Main scripts**
+## **Configuration**
 
 If the main Python code that controls the weather station crashes then interfacing the Raspberry PI is compromised. To mitigate this the launcher.sh script is run on reboot, this in turn runs forever.py which will call the main python code wwwRP.py and restart it if the latter crashes. Various setups detailed below need to be performed on these.
 
@@ -321,9 +323,9 @@ For testing wwwRP.py you can comment out the above crontab line (with #) and reb
 Start Idle with the Python 3.7.3 Shell from Programming => Python 3 (IDLE).
 Open and edit/run the /home/pi/roman/wwwRP.py script. 
 
-**IMPORTANT:** Do not run www.RP.py from IDLE when it is already running in the background through crontab. This will cause mysterious serial comm errors.
+**IMPORTANT :** Do not run www.RP.py from IDLE when it is already running in the background through crontab. This will cause mysterious serial comm errors.
 
-Finally to run the (fun) numc executable type:
+Finally to enable the (fun) numc executable type:
 
 * cd /
 * cd home/pi/roman
