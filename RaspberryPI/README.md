@@ -233,9 +233,9 @@ Up to this point we have configured the Raspberry Pi basically as we want it for
 
 These files will need to be loaded onto the Raspberry PI into three particular directories. One of these directories does not natively exist and must be created:
 
-* ```cd /```
-* ```cd home/pi```
-* ```mkdir roman``` (or your own name)
+* cd /
+* cd home/pi
+* mkdir roman (or your own name)
 
 All the files are listed here with their required directories and will be explained and/or setup in the following sections. You can download them now with the supplied links if you are using Git from the Raspberry PI or any other method like a USB stick or WinSCP from a Windows 10 PC.
 
