@@ -11,7 +11,7 @@
 // If running in production (ie. no connection to PC) then MUST comment out "#define DEBUG",
 // before compiling and loading, and then disconnecting from PC and restarting.
 
-#define DEBUG
+//#define DEBUG
 
 // creating objects for Adafruit I2C sensors
 Adafruit_BME280 bme; // I2C

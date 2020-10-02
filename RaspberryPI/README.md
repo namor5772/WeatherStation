@@ -305,17 +305,22 @@ on reboot this directory will contain an updated cronlog file which can be exami
 * cd home/pi/logs
 * more cronlog
 
-To have wwwRP.py run we need to create (touch) a utility file:
+To have wwwRP.py run we need to create (touch) utility files with appropriate permissions:
 
 * cd /
 * cd var/tmp
 * touch text.txt
+* sudo chmod 0777 text.txt
+* touch text_bak.txt
+* sudo chmod 0777 text_bak.txt
 
 For testing wwwRP.py you can comment out the above crontab line (with #) and reboot. You can then edit and/or run the script from the IDLE GUI but to retain appropriate permissions adjust the **Command:** line in the properties of the **Python3 (IDLE)** app to include sudo, ie to be:
 
 * sudo /usr/bin/idle-python3.7
 
 Start Idle with the Python 3.7.3 Shell from Programming => Python 3 (IDLE).
-Open and edit/run the /home/pi/roman/wwwRP.py script.
+Open and edit/run the /home/pi/roman/wwwRP.py script. 
+
+**IMPORTANT:** Do not run www.RP.py from IDLE when it is already running in the background through crontab. This will cause mysterious serial comm errors.
  
 
