@@ -259,9 +259,15 @@ If the main Python code that controls the weather station crashes then interfaci
 
 from the terminal type:
 
-* cd /sudo
+* cd /
 * cd home/pi
-* sudo nano launcher.sh
+* sudo nano launcher.sh (this shows:)
+
+      #!bin/sh
+      cd /
+      cd home/pi/roman
+      python3 forever.py wwwRP.py
+      cd /
 
 make this file executable
 
