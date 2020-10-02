@@ -257,17 +257,19 @@ When copying index.php you might need to first delete the already existing file 
 
 If the main Python code that controls the weather station crashes then interfacing the Raspberry PI is compromised. To mitigate this the launcher.sh script is run on reboot, this in turn runs forever.py which will call the main python code wwwRP.py and restart it if the latter crashes. Various setups detailed below need to be performed on these.
 
-from the terminal type:
+To setup launcher.sh, type in the terminal:
 
 * cd /
 * cd home/pi
-* sudo nano launcher.sh (this shows:)
+* sudo nano launcher.sh (displays below for interest:)
 
       #!bin/sh
       cd /
       cd home/pi/roman
       python3 forever.py wwwRP.py
       cd /
+
+* Ctrl-X (to exit nano)
 
 make this file executable
 
@@ -280,3 +282,40 @@ and confirm the permissions
 * cd /
 * cd home/pi
 * stat launcher.sh
+
+To make launcher.sh run at reboot:
+
+* sudo crontab -e
+
+  run from any directory it opens crontab in nano where you must add the line:
+
+      @reboot sh /home/pi/launcher.sh >/home/pi/logs/cronlog 2>&1
+
+If it does not exist text is diplayed saying at start "no crontab for root" and gives options to select editor for later. Choose 1 for nano. This opens crontab where you can add above line, save and exit.
+
+create the home/pi/logs directory:
+
+* cd /
+* cd home/pi
+* mkdir logs
+
+on reboot this directory will contain an updated cronlog file which can be examined thus:
+
+* cd /
+* cd home/pi/logs
+* more cronlog
+
+To have wwwRP.py run we need to create (touch) a utility file:
+
+* cd /
+* cd var/tmp
+* touch text.txt
+
+For testing wwwRP.py you can comment out the above crontab line (with #) and reboot. You can then edit and/or run the script from the IDLE GUI but to retain appropriate permissions adjust the **Command:** line in the properties of the **Python3 (IDLE)** app to include sudo, ie to be:
+
+* sudo /usr/bin/idle-python3.7
+
+Start Idle with the Python 3.7.3 Shell from Programming => Python 3 (IDLE).
+Open and edit/run the /home/pi/roman/wwwRP.py script.
+ 
+
