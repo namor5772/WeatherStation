@@ -4,7 +4,7 @@
 
 ## Summary
 
-This document describes the design and programming of an IOT enabled weather station. At regular intervals (eg. every 10 minutes) it measures a range of weather and other statistics, saving them as time stamped rows to an updated csv file. In particular:
+This document describes the design building and programming of an IOT enabled weather station. At regular intervals (eg. every 10 minutes) it measures a range of weather and other statistics, saving them as time stamped rows to an updated csv file. In particular:
 
 1. Temperature (C)
 2. Pressure (HPa)
@@ -23,10 +23,16 @@ The hardware is based on a Raspberry Pi 3A+ and an Arduino Leonardo together wit
 The wifi modem and servo are attched by loomed 2 metre cables to the Vero board. The temperatue, pressure and humidity sensor is similarily attached with 1 metre cables. The two RJ11 terminated 3 metre cables from the rainfall, windspeed and wind direction sensors also attach to the Vero board.
 The Vero board circuit logic was designed in TinyCAD and its layout in VeeCAD.
 
-![alt text](images/Imager.png "IDE Main Screen")
+## Programming the Raspberry PI
+
+Details on how to setup the Raspberry Pi are [**HERE**](RaspberryPI/README.md).
+
+## Programming the Arduino Leonardo
+
+Details on how to setup the Arduino Leonardo are [**HERE**](Arduino/README.md).
 
 ## List of parts
-#  
+  
 ### Core components
 
 | Qty | Product | Description | AUD Cost | Comment |
@@ -52,7 +58,7 @@ The Vero board circuit logic was designed in TinyCAD and its layout in VeeCAD.
 |1 | [ZT2152](https://jaycar.com.au/p/ZT2152) | BC547 NPN Transistor | $0.30 | used in relay circuit |
 |1 | [ZR1004](https://jaycar.com.au/p/ZR1004) | 1N4004 1A 400V Diode - Pack of 4 ( only need 1 )| $0.98 | used in relay circuit |
 |2 | [MCCB1V104M2ACB](https://au.element14.com/multicomp/mccb1v104m2acb/cap-0-1-f-35v-20/dp/9708480) | Tantalum Capacitor, 0.1 µF, 35 V, MCCB Series, ± 20%, Radial Leaded, 5.08 mm | $4.34 | used in hardware debounce circuit for wind speed and rain sensors |
-#
+
 ### Circuit board connectors
 
 | Qty | Product | Description | AUD Cost | Commen t |
@@ -74,7 +80,7 @@ The Vero board circuit logic was designed in TinyCAD and its layout in VeeCAD.
 |1 | [WC6024](https://jaycar.com.au/p/WC6024) | 150mm Plug to Plug Jumper Leads - 40 Piece ( only need 3 ) | $5.95 | for connecting Vero board circuits to Servo and other external sensors |
 |1 | [WC7723](https://jaycar.com.au/p/WC7723) | 0.5m USB A male to Micro-B Cable ( can be 0.25m ) | $5.95 | To power Arduino from Raspberry Pi USD port |
 |1 | [WC7757](https://jaycar.com.au/p/WC7757) | USB A to USB Micro B Cable 150mm | $4.95 | To power Vero board circuit from Raspberry Pi (USB not needed) |
-#  
+
 ### Components external to main circuit board
 
 | Qty | Product | Description | AUD Cost | Comment |
