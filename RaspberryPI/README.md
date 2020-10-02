@@ -128,7 +128,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 Dataplicity is necessary so that the web server residing on the Raspberry Pi will be accessible from anywhere in the world with an arbitrary modern browser. This enables the Raspberry Pi to be a node in my IOT. Dataplicity is a sort of VPN service.
 
 On an arbitrary PC (eg. Win10) with an arbitrary browser open
-https://www.dataplicity.com and if not already done so setup account. You will need:
+<https://www.dataplicity.com> and if not already done so setup account. You will need:
 
 * An email address - say - SOMEADDRESS@gmail.com
 * A password - say - DATAPLICITYPWD
