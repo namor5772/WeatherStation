@@ -61,7 +61,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
     * sudo nano sites-enabled/default
     * Find the line "index index.html index.htm;"
     * Add "index.php" after "index" in above line
-    * Find the line "# location ~ \\.php$ {"
+    * Find the line `#location ~ \.php$ {`
     * and add the following lines or remove # till the next "}"
 
           include snippets/fastcgi-php.conf;
@@ -321,7 +321,7 @@ For testing wwwRP.py you can comment out the above crontab line (with #) and reb
 * sudo /usr/bin/idle-python3.7
 
 Start Idle with the Python 3.7.3 Shell from Programming => Python 3 (IDLE).
-Open and edit/run the /home/pi/roman/wwwRP.py script. 
+Open and edit/run the /home/pi/roman/wwwRP.py script.
 
 **IMPORTANT :** Do not run www.RP.py from IDLE when it is already running in the background through crontab. This will cause mysterious serial comm errors.
 
