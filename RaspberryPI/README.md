@@ -58,21 +58,25 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * sudo service nginx restart (It doesn't hurt)
   * sudo apt install php-fpm
   * cd /etc/nginx
-    * sudo nano sites-enabled/default
-    * Find the line "index index.html index.htm;"
-    * Add "index.php" after "index" in above line
+  * sudo nano sites-enabled/default
+    * Find the line `index index.html index.htm;`
+    * Add `index.php` after `index` in above line
     * Find the line `#location ~ \.php$ {`
     * and add the following lines or remove # till the next "}"
 
-          include snippets/fastcgi-php.conf;
-          fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+		```
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+		```
 
     * It should look like
 
-          location ~ \.php$ {
-            include snippets/fastcgi-php.conf;
-            fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
-          }
+		```
+		location ~ \.php$ {
+			include snippets/fastcgi-php.conf;
+			fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+			}
+		```
 
     * Save the above edited file and reload
       * sudo /etc/init.d/nginx reload
@@ -93,8 +97,10 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
     * sudo cp nginx.service nginx.service.old
   * Add the following 2 lines at the end of the [Service] block of nginx.service
 
-        Restart=on-failure
-        RestartSec=9s
+	```
+	Restart=on-failure
+	RestartSec=9s
+	```
 
     * Do this by typing: sudo nano nginx.service
     * Save the edited nginx.service file: Ctrl-X, Y, Enter.
@@ -115,9 +121,11 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * sudo nano index.nginx-debian.html (being the default web page)
   * Add the below lines just above the body tag:
 
-        <?php
-          phpinfo();
-        ?>
+	```
+    <?php
+      phpinfo();
+    ?>
+	```
 
   * Save the file as index.php
   * View <http://192.168.0.12> again
@@ -202,7 +210,7 @@ which displays:
 
 ![alt text](images/Internet2.png "wpa_supplicant")
 
-If there are problems delete the .wpa_supplicant.conf.swp hidden file from that directory. You can see and delete it by typing:
+If there are problems delete the ```.wpa_supplicant.conf.swp``` hidden file from that directory. You can see and delete it by typing:
 
 * cd /
 * cd etc/wpa_supplicant
@@ -225,9 +233,9 @@ Up to this point we have configured the Raspberry Pi basically as we want it for
 
 These files will need to be loaded onto the Raspberry PI into three particular directories. One of these directories does not natively exist and must be created:
 
-* cd /
-* cd home/pi
-* mkdir roman (or your own name)
+* ```cd /```
+* ```cd home/pi```
+* ```mkdir roman``` (or your own name)
 
 All the files are listed here with their required directories and will be explained and/or setup in the following sections. You can download them now with the supplied links if you are using Git from the Raspberry PI or any other method like a USB stick or WinSCP from a Windows 10 PC.
 
@@ -265,11 +273,13 @@ To setup launcher.sh, type in the terminal:
 * cd home/pi
 * sudo nano launcher.sh (displays below for interest:)
 
-      #!bin/sh
-      cd /
-      cd home/pi/roman
-      python3 forever.py wwwRP.py
-      cd /
+	```
+	#!bin/sh
+	cd /
+	cd home/pi/roman
+	python3 forever.py wwwRP.py
+	cd /
+	```			
 
 * Ctrl-X (to exit nano)
 
@@ -291,7 +301,9 @@ To make launcher.sh run at reboot:
 
   run from any directory it opens crontab in nano where you must add the line:
 
-      @reboot sh /home/pi/launcher.sh >/home/pi/logs/cronlog 2>&1
+	```
+	@reboot sh /home/pi/launcher.sh >/home/pi/logs/cronlog 2>&1
+	```
 
 If it does not exist text is diplayed saying at start "no crontab for root" and gives options to select editor for later. Choose 1 for nano. This opens crontab where you can add above line, save and exit.
 
