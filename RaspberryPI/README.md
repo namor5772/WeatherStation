@@ -4,7 +4,7 @@
 
 - [Hardware](#Hardware)
 - [SD Card](#SD-Card)
-- [Setup nginx & php](#Setup-nginx-&-php)
+- [Setup nginx & php](#Setupnginx&php)
   - [Install](#Install)
   - [Test nginx](#Test-nginx)
   - [Make nginx restart if it crashes](#Make-nginx-restart-if-it-crashes)
@@ -56,7 +56,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * System => Hostname: HOSTNAME
   * Interfaces Enable: **Camera, SSH, I2C, Serial Port, Remote GPIO**
 
-## **Setup nginx & php**
+## **Setupnginx&php**
 
 ### **Install**
 
