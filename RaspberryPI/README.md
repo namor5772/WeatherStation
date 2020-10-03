@@ -3,7 +3,7 @@
 ## **Contents**
 
 - [Hardware](#Hardware)
-- [SD Card](#SD-Card-
+- [SD Card](#SD-Card)
 - [Setup nginx and php](#Setup-nginx-and-php)
   - [Install](#Install)
   - [Test nginx](#Test-nginx)
@@ -102,7 +102,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * type <http://192.168.0.12> in the browser of another PC attached to the local network:
 ![alt text](images/nginxtest.png "nginx test")
 
-* **Make nginx restart if it crashes**
+### **Make nginx restart if it crashes**
 
   * Go to /lib/systemd/system and backup the nginx systemd unit (just in case)
     * cd /
@@ -126,7 +126,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
     * sudo kill -9 PID
     * The nginx process will restart with a different PID (as can be viewed through the Task Manager or type "cat nginx.pid" again)
 
-* **Test php**
+### **Test php**
 
   * cd /
   * cd var/www/html
