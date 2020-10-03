@@ -105,12 +105,10 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
     * cd /lib/systemd/system
     * sudo cp nginx.service nginx.service.old
   * Add the following 2 lines at the end of the [Service] block of nginx.service
-
 	```
 	Restart=on-failure
 	RestartSec=9s
 	```
-
     * Do this by typing: sudo nano nginx.service
     * Save the edited nginx.service file: Ctrl-X, Y, Enter.
   * load the new config:
