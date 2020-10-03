@@ -58,43 +58,43 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
 
 ## **Setup nginx & php**
 
-* **Install**
+### **Install**
 
-  * cd /
-  * pip3 --version (just for information)
-  * sudo apt-get update
-  * sudo apt-get install nginx
-  * sudo /etc/init.d/nginx start
-  * sudo netstat -an | grep LISTEN | grep :80
-    * This checks that a service is listening on port 80. It should show something like:
+* cd /
+* pip3 --version (just for information)
+* sudo apt-get update
+* sudo apt-get install nginx
+* sudo /etc/init.d/nginx start
+* sudo netstat -an | grep LISTEN | grep :80
+  * This checks that a service is listening on port 80. It should show something like:
 ![alt text](images/nginx.png "nginx service listening")
-  * sudo service nginx restart (It doesn't hurt)
-  * sudo apt install php-fpm
-  * cd /etc/nginx
-  * sudo nano sites-enabled/default
-    * Find the line `index index.html index.htm;`
-    * Add `index.php` after `index` in above line
-    * Find the line `#location ~ \.php$ {`
-    * and add the following lines or remove # till the next "}"
+* sudo service nginx restart (It doesn't hurt)
+* sudo apt install php-fpm
+* cd /etc/nginx
+* sudo nano sites-enabled/default
+  * Find the line `index index.html index.htm;`
+  * Add `index.php` after `index` in above line
+  * Find the line `#location ~ \.php$ {`
+  * and add the following lines or remove # till the next "}"
 
-		```
+	```
+	include snippets/fastcgi-php.conf;
+	fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+	```
+
+  * It should look like
+
+	```
+	location ~ \.php$ {
 		include snippets/fastcgi-php.conf;
 		fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
-		```
+		}
+	```
 
-    * It should look like
+   * Save the above edited file and reload
+     * sudo /etc/init.d/nginx reload
 
-		```
-		location ~ \.php$ {
-			include snippets/fastcgi-php.conf;
-			fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
-			}
-		```
-
-    * Save the above edited file and reload
-      * sudo /etc/init.d/nginx reload
-
-* **Test nginx**
+### **Test nginx**
 
   * find the address on the Raspberry PI
     * hostname -I
