@@ -1,4 +1,4 @@
-# **Raspberry PI**
+# **Raspberry PI setup**
 
 ## **Contents**
 
@@ -345,5 +345,3 @@ Finally to enable the (fun) numc executable type:
 * cd /
 * cd home/pi/roman
 * sudo chmod 0777 numc
-
-## **THE END**
