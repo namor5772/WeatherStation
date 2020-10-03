@@ -1,9 +1,22 @@
 # **Raspberry PI**
 
-The goal is to launch a python script on reboot of the Raspberry PI and have the script restart if it crashes.
-We are using a Raspberry PI 3A+ and run all scripts using Python 3 which we assume has been installed.
+## **Contents**
+
+- [Hardware](#Hardware)
+- [SD Card](#SD-Card)
+- [Setup nginx & php](#Setup-nginx-&-php)
+  - [Install](#Install)
+  - [Test nginx](#Test-nginx)
+  - [Make nginx restart if it crashes](#Make-nginx-restart-if-it-crashes)
+  - [Test php](#Test-php)
+- [Setup Dataplicity](#Setup-Dataplicity)
+- [Internet](#Internet)
+- [Code files](#Code-files)
+- [Configuration](#Configuration)
 
 ## **Hardware**
+
+The goal is to launch a python script on reboot of the Raspberry PI and have the script restart if it crashes. We are using a Raspberry PI 3A+ and run all scripts using Python 3 which we assume has been installed.
 
 Raspberry PI 3A+. We are using this version since it uses less power, is cheaper, has a smaller form factor but has wifi and the one USB port is sufficient.
 
@@ -43,9 +56,9 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * System => Hostname: HOSTNAME
   * Interfaces Enable: **Camera, SSH, I2C, Serial Port, Remote GPIO**
 
-## **Install nginx & php**
+## **Setup nginx & php**
 
-* **install nginx & php, in a terminal window type:**
+* **Install**
 
   * cd /
   * pip3 --version (just for information)
@@ -81,7 +94,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
     * Save the above edited file and reload
       * sudo /etc/init.d/nginx reload
 
-* **To test the server:**
+* **Test nginx**
 
   * find the address on the Raspberry PI
     * hostname -I
@@ -89,7 +102,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * type <http://192.168.0.12> in the browser of another PC attached to the local network:
 ![alt text](images/nginxtest.png "nginx test")
 
-* **To make nginx restart if it crashes non gracefully (it happens):**
+* **Make nginx restart if it crashes**
 
   * Go to /lib/systemd/system and backup the nginx systemd unit (just in case)
     * cd /
@@ -113,7 +126,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
     * sudo kill -9 PID
     * The nginx process will restart with a different PID (as can be viewed through the Task Manager or type "cat nginx.pid" again)
 
-* **To test PHP**
+* **Test php**
 
   * cd /
   * cd var/www/html
@@ -131,7 +144,7 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * View <http://192.168.0.12> again
 ![alt text](images/nginxphp.png "nginx php test")
 
-## **Setup Dataplicity:**
+## **Setup Dataplicity**
 
 Dataplicity is necessary so that the web server residing on the Raspberry Pi will be accessible from anywhere in the world with an arbitrary modern browser. This enables the Raspberry Pi to be a node in my IOT. Dataplicity is a sort of VPN service.
 
@@ -192,7 +205,7 @@ To enable the Raspberry PI website select the Wormhole slider and edit the websi
 
 This determines the name of where the Raspberry PI an be reached from the wolrd wide web. In this case <https://DATAPLICITYNAME-device.dataplicity.io>
 
-## **Internet on the Raspberry PI**
+## **Internet**
 
 The Raspberry Pi is intended to be used offsite with a wifi dongle. The dongle is assumed to be constantly on by default with the connection automatically reestablished on reboot.
 
