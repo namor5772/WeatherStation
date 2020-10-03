@@ -285,15 +285,13 @@ To setup launcher.sh, type in the terminal:
 * cd /
 * cd home/pi
 * sudo nano launcher.sh (displays below for interest:)
-
 	```
 	#!bin/sh
 	cd /
 	cd home/pi/roman
 	python3 forever.py wwwRP.py
 	cd /
-	```			
-
+	```
 * Ctrl-X (to exit nano)
 
 make this file executable
