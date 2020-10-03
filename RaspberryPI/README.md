@@ -76,21 +76,17 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * Add `index.php` after `index` in above line
   * Find the line `#location ~ \.php$ {`
   * and add the following lines or remove # till the next "}"
-
 	```
 	include snippets/fastcgi-php.conf;
 	fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
 	```
-
   * It should look like
-
 	```
 	location ~ \.php$ {
 		include snippets/fastcgi-php.conf;
 		fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
 		}
 	```
-
    * Save the above edited file and reload
      * sudo /etc/init.d/nginx reload
 
@@ -133,13 +129,11 @@ With a 32GB micro SD Card and adaptor attached to your Windows 10 PC select the 
   * sudo chmod o+w /var/www/html (to enable copying into this folder for later)
   * sudo nano index.nginx-debian.html (being the default web page)
   * Add the below lines just above the body tag:
-
 	```
     <?php
       phpinfo();
     ?>
 	```
-
   * Save the file as index.php
   * View <http://192.168.0.12> again
 ![alt text](images/nginxphp.png "nginx php test")
