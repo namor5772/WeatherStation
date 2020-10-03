@@ -20,7 +20,7 @@ The goal is to launch a python script on reboot of the Raspberry PI and have the
 
 Raspberry PI 3A+. We are using this version since it uses less power, is cheaper, has a smaller form factor but has wifi and the one USB port is sufficient.
 
-It is powered by 5.2V and when in production the one USB connection is used to power the Arduino Leonardo board. Apart from these the only other connections are 4 GPIO pins.
+It is powered by 5.2V and when in production the one USB connection is used to power the Arduino Leonardo board. Apart from these and the Raspberry PI camera the only other connections are to 4 GPIO pins.
 
 * GPIO 1 - 3.3V
 * GPIO 6 - GROUND
