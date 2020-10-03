@@ -11,6 +11,8 @@
 For efficiency and convenience we use an Arduino Leonardo without headers.
 The goal is to have it running the appropriate code and have it interface to sensors, a servo, a digital relay and the Raspberry PI. All these connections are made to the Vero board to which everything is linked.
 
+The main limitations with the Leonardo as compared to the more powerful MEGA is that it has only one usable interrupt pin (D7). Its data memory is also less, so some tricks had to be used to enable code to load. Luckily it has two hardware serial ports (with one usable) which ruled out the less powerful Nano.
+
 In production it is powered by the Raspberry PI with a USB A male to Micro-B Cable. For programming this can be connected to a PC. The other connections are via various pads (detailed below) to which appropriate straight locking headers are soldered.
 
 * 4 Pin 0.1 Straight Locking Header
@@ -45,7 +47,9 @@ that is needed on this Raspberry PI. Once completed we will have an SD card that
 
 ## **Code files**
 
-Go to <https://www.raspberrypi.org/downloads> and download the Raspberry PI imager (for Windows).
+ File | Description |
+| --- | --- |
+| [ArduinoLeonardo.ino](ArduinoLeonardo/ArduinoLeonardo.ino) | the c++ program that runs on the Arduino |
 
 ## **Configuration**
 
