@@ -9,9 +9,9 @@
 ## **Hardware**
 
 For efficiency and convenience we use an Arduino Leonardo without headers.
-The goal is to have it running the appropriate code and have it interface to sensors, a servo, a digital relay and the Raspberry PI. All these connections are made to the Vero board to which everything is linked.
+The goal is to have it running the appropriate code and have it interface to sensors, a servo, a digital relay and the Raspberry PI. All these connections are made to the Vero board links everything.
 
-The main limitations with the Leonardo as compared to the more powerful MEGA is that it has only one usable interrupt pin (D7). Its data memory is also less, so some tricks had to be used to enable code to load. Luckily it has two hardware serial ports (with one usable) which ruled out the less powerful Nano.
+The main limitations with the Leonardo as compared to the more powerful MEGA is that it has only one usable interrupt pin (D7). Its data memory is also less, so some tricks had to be used to reduce global data usage. Luckily it has two hardware serial ports (with one usable) which ruled out the less powerful Nano.
 
 In production it is powered by the Raspberry PI with a USB A male to Micro-B Cable. For programming this can be connected to a PC. The other connections are via various pads (detailed below) to which appropriate straight locking headers are soldered.
 
@@ -42,16 +42,16 @@ In production it is powered by the Raspberry PI with a USB A male to Micro-B Cab
 
 ![alt text](images/Leonardo2.png "Leonardo2")
 
-
-that is needed on this Raspberry PI. Once completed we will have an SD card that boots to the intended IOT environment.
-
 ## **Code files**
 
  File | Description |
 | --- | --- |
 | [ArduinoLeonardo.ino](ArduinoLeonardo/ArduinoLeonardo.ino) | the c++ program that runs on the Arduino |
 
+No setup of software for the Leonardo is necessary apart from just compililng and loading the above file onto it. This can be done in the well documented Arduino IDE.
+You will need to load the include files from ... to be able to sucessfully compile.
+
 ## **Configuration**
 
+If debuging/examining the code you will need to compile with the '''# DEBUG TRUE''' flag
 Arduino Leonardo
-
