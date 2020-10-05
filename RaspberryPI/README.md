@@ -272,13 +272,13 @@ When copying index.php you might need to first delete the already existing file 
 
 ## **Configuration**
 
-If the main Python code that controls the weather station crashes then interfacing the Raspberry PI is compromised. To mitigate this the ```launcher.sh``` script is run on reboot, this in turn runs ```forever.py``` which will call the main python code ```wwwRP.py``` and restart it if the latter crashes. Various setups detailed below need to be performed on these.
+If the main Python code that controls the weather station crashes then interfacing the Raspberry PI is compromised. To mitigate this the launcher.sh script is run on reboot, this in turn runs forever.py which will call the main python code wwwRP.py and restart it if the latter crashes. Various setups detailed below need to be performed on these.
 
-To setup ```launcher.sh```, type in the terminal:
+To setup launcher.sh, type in the terminal:
 
 * cd /
 * cd home/pi
-* sudo nano ```launcher.sh``` (displays below for interest:)
+* sudo nano launcher.sh (displays below for interest:)
 	```
 	#!bin/sh
 	cd /
@@ -292,15 +292,15 @@ make this file executable
 
 * cd /
 * cd home/pi
-* sudo chmod 0775 ```launcher.sh```
+* sudo chmod 0775 launcher.sh
 
 and confirm the permissions
 
 * cd /
 * cd home/pi
-* stat ```launcher.sh```
+* stat launcher.sh
 
-To make ```launcher.sh``` run at reboot:
+To make launcher.sh run at reboot:
 
 * sudo crontab -e
 
@@ -324,7 +324,7 @@ on reboot this directory will contain an updated cronlog file which can be exami
 * cd home/pi/logs
 * more cronlog
 
-To have ```wwwRP.py``` run we need to create (touch) utility files with appropriate permissions:
+To have wwwRP.py run we need to create (touch) utility files with appropriate permissions:
 
 * cd /
 * cd var/tmp
@@ -333,14 +333,14 @@ To have ```wwwRP.py``` run we need to create (touch) utility files with appropri
 * touch text_bak.txt
 * sudo chmod 0777 text_bak.txt
 
-For testing ```wwwRP.py``` you can comment out the above crontab line (with #) and reboot. You can then edit and/or run the script from the IDLE GUI but to retain appropriate permissions adjust the **Command:** line in the properties of the **Python3 (IDLE)** app to include sudo, ie to be:
+For testing wwwRP.py you can comment out the above crontab line (with #) and reboot. You can then edit and/or run the script from the IDLE GUI but to retain appropriate permissions adjust the **Command:** line in the properties of the **Python3 (IDLE)** app to include sudo, ie to be:
 
 * sudo /usr/bin/idle-python3.7
 
 Start Idle with the Python 3.7.3 Shell from Programming => Python 3 (IDLE).
 Open and edit/run the /home/pi/roman/wwwRP.py script.
 
-**IMPORTANT :** Do not run ```wwwRP.py``` from IDLE when it is already running in the background through crontab. This will cause mysterious serial comm errors.
+**IMPORTANT :** Do not run wwwRP.py from IDLE when it is already running in the background through crontab. This will cause mysterious serial comm errors.
 
 Finally to enable the (fun) numc executable type:
 
