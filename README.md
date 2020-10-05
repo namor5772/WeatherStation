@@ -5,6 +5,9 @@
 - [Summary](#Summary)
 - [Setup Raspberry PI](#Setup-Raspberry-PI)
 - [Setup Arduino](#Setup-Arduino)
+- [Build circuit board](#Build-circuit-board)
+- [Assemble weather station](#Assemble-weather-station)
+- [Use weather station](#Use-weather-station)
 - [List of parts](#List-of-parts)
   - [Core components](#Core-components)
   - [Connectors](#Connectors)
@@ -42,6 +45,18 @@ Details on how to set it up are given [**HERE**](RaspberryPI/README.md).
 We are using a Arduino Leonardo (Without Headers).
 
 Details on how to set it up are given [**HERE**](Arduino/README.md).
+
+## Build circuit board
+
+Complete
+
+## Assemble weather station
+
+Complete
+
+## Use weather station
+
+Complete
 
 ## List of parts
   
