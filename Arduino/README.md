@@ -47,11 +47,16 @@ In production it is powered by the Raspberry PI with a USB A male to Micro-B Cab
  File | Description |
 | --- | --- |
 | [ArduinoLeonardo.ino](ArduinoLeonardo/ArduinoLeonardo.ino) | the c++ program that runs on the Arduino |
+| [Adafruit Unified Sensor] | Third party Library |
+| [Adafruit BME280 Library] | Third party library |
+| [Adafruit INA260 Library] | Third party library |
 
-No setup of software for the Leonardo is necessary apart from just compililng and loading the above file onto it. This can be done in the well documented Arduino IDE.
-You will need to load the include files from ... to be able to sucessfully compile.
+No setup of software for the Leonardo is necessary apart from just compiling and loading the above ```ArduinoLeonardo.ino``` file onto it. This can be done in the well documented [Arduino IDE](https://www.arduino.cc/en/Main/Software).
+
+To successfully compile you will also need to download non standard libraries shown above
 
 ## **Configuration**
 
-If debuging/examining the code you will need to compile with the '''# DEBUG TRUE''' flag
-Arduino Leonardo
+If debuging/examining the code you will need to compile with the ```# DEBUG TRUE``` flag and then use the *Tools => Serial Monitor* window to examine/confirm that the program is running correctly. In that case the Arduino is powered from the PC's USB port that is also used for programming.
+
+In production comment out the above flag ie. compile with ```//# DEBUG TRUE```. In that case you must after programming restart the software while powering the Arduino from the Raspberry PI.
