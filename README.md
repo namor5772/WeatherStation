@@ -3,12 +3,13 @@
 ## **Contents**
 
 - [Summary](#Summary)
-- [Programming the Raspberry PI](#Programming-the-Raspberry-PI)
-- [Programming the Arduino Leonardo](#Programming-the-Arduino-Leonardo)
+- [Setup Raspberry PI](#Setup-Raspberry-PI)
+- [Setup Arduino](#Setup-Arduino)
 - [List of parts](#List-of-parts)
   - [Core components](#Core-components)
   - [Connectors](#Connectors)
   - [External components](#External-components)
+  - [Backup](#Backup)
 
 ## Summary
 
@@ -31,11 +32,11 @@ The hardware is based on a Raspberry Pi 3A+ and an Arduino Leonardo together wit
 
 The wifi modem and servo are attched by loomed 2 metre cables to the Vero board. The temperatue, pressure and humidity sensor is similarily attached with 1 metre cables. The two RJ11 terminated 3 metre cables from the rainfall, windspeed and wind direction sensors also attach to the Vero board. The Vero board circuit logic was designed in TinyCAD and its layout in VeeCAD.
 
-## Programming the Raspberry PI
+## Setup Raspberry PI
 
 Details on how to setup the Raspberry Pi are [**HERE**](RaspberryPI/README.md).
 
-## Programming the Arduino Leonardo
+## Setup Arduino
 
 Details on how to setup the Arduino Leonardo are [**HERE**](Arduino/README.md).
 
