@@ -33,7 +33,7 @@ The wifi modem and servo are attched by loomed 2 metre cables to the Vero board.
 
 ## Setup Raspberry PI
 
-We are usinga Raspberry Pi 3 Model A+.
+We are using a Raspberry Pi 3 Model A+.
 
 Details on how to set it up are given [**HERE**](RaspberryPI/README.md).
 
