@@ -350,3 +350,8 @@ Finally to enable the (fun) numc executable type:
 
 ## **Backup**
 
+As detailed above once we have an SD card that boots to the intended IOT environment it is helpfull to create an image so that if the SD card becomes corrupted it can be easily replaced.
+
+On a Windows PC create an image file (*.img). Do this with the [Win32 Disk Imager](https://win32diskimager.download/) application. If the original SD card is corrupted this image can be used to recreate it on a new one. **Make sure that this new card is the same type as the original one**.
+
+All this is pretty straight forward, but you can get an explanation [**HERE**](https://www.raspberrypi.org/documentation/installation/installing-images/windows.md) or a more detailed one [**HERE**](https://www.howtogeek.com/341944/how-to-clone-your-raspberry-pi-sd-card-for-foolproof-backup/).

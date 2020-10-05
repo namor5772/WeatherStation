@@ -9,7 +9,6 @@
   - [Core components](#Core-components)
   - [Connectors](#Connectors)
   - [External components](#External-components)
-  - [Backup](#Backup)
 
 ## Summary
 
@@ -106,8 +105,3 @@ Details on how to setup the Arduino Leonardo are [**HERE**](Arduino/README.md).
 |1 | [HP1225](https://jaycar.com.au/p/HP1225) | 10mm Loom Tube - 10 metres ( only 4 metres needed ) | $18.95 | keeps wires to external sensors and wifi dongle secure |
 |1 | [WifiModem](https://www.telstra.com.au/internet/mobile-broadband/telstra-4gx-wifi-pro) | Telstra 4GX Wi-Fi Pro | $120.0 | connects weather station to the internet |
 |1 | [COU2AMB02](https://www.officeworks.com.au/shop/officeworks/p/comsol-male-type-a-usb-2-0-to-male-mini-usb-cable-2m-cou2amb02) | USB A to Mini-B 2M Cable | $14.88 | power to above wifi dongle from Vero board power circuit |
-
-```python
-hello c := 4
-int c,d = 77.7
-```
