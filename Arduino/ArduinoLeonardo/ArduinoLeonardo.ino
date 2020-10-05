@@ -1,5 +1,5 @@
-//#include <math.h>
-//#include <Wire.h>
+#include <math.h>
+#include <Wire.h>
 #include <Servo.h>
 #include <Adafruit_Sensor.h>
 #include <Adafruit_INA260.h>
