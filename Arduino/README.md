@@ -9,7 +9,7 @@
 ## **Hardware**
 
 For efficiency and convenience we use an Arduino Leonardo without headers.
-The goal is to have it running the appropriate code and have it interface to sensors, a servo, a digital relay and the Raspberry PI. All these connections are made to the Vero board links everything.
+The goal is to have it running the appropriate code and have it interface to sensors, a servo, a digital relay and the Raspberry PI. All these connections are made to the Vero board that links everything.
 
 The main limitations with the Leonardo as compared to the more powerful MEGA is that it has only one usable interrupt pin (D7). Its data memory is also less, so some tricks had to be used to reduce global data usage. Luckily it has two hardware serial ports (with one usable) which ruled out the less powerful Nano.
 
@@ -47,13 +47,13 @@ In production it is powered by the Raspberry PI with a USB A male to Micro-B Cab
  File | Description |
 | --- | --- |
 | [ArduinoLeonardo.ino](ArduinoLeonardo/ArduinoLeonardo.ino) | the c++ program that runs on the Arduino |
-| [Adafruit Unified Sensor] | Third party Library |
-| [Adafruit BME280 Library] | Third party library |
-| [Adafruit INA260 Library] | Third party library |
+| [Adafruit Unified Sensor](https://github.com/adafruit/Adafruit_Sensor) | Third party Library |
+| [Adafruit BME280 Library](https://github.com/adafruit/Adafruit_BME280_Library) | Third party library |
+| [Adafruit INA260 Library](https://github.com/adafruit/Adafruit_INA260) | Third party library |
 
 No setup of software for the Leonardo is necessary apart from just compiling and loading the above ```ArduinoLeonardo.ino``` file onto it. This can be done in the well documented [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
-To successfully compile you will also need to download non standard libraries shown above
+To successfully compile you will also need to download the three third party libraries shown above.
 
 ## **Configuration**
 
