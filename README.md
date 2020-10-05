@@ -33,11 +33,15 @@ The wifi modem and servo are attched by loomed 2 metre cables to the Vero board.
 
 ## Setup Raspberry PI
 
-Details on how to setup the Raspberry Pi are [**HERE**](RaspberryPI/README.md).
+We are usinga Raspberry Pi 3 Model A+.
+
+Details on how to set it up are given [**HERE**](RaspberryPI/README.md).
 
 ## Setup Arduino
 
-Details on how to setup the Arduino Leonardo are [**HERE**](Arduino/README.md).
+We are using a Arduino Leonardo (Without Headers).
+
+Details on how to set it up are given [**HERE**](Arduino/README.md).
 
 ## List of parts
   
@@ -46,7 +50,7 @@ Details on how to setup the Arduino Leonardo are [**HERE**](Arduino/README.md).
 | Qty | Product | Description | AUD Cost | Comment |
 | --- | ---- | --- | --- | --------------- |
 |1 | [CE05971](https://core-electronics.com.au/raspberry-pi-3-model-a-plus.html) | Raspberry Pi 3 Model A+ | $44.51 | Used for internet connection/control and storing collected data | 
-|1 | [A000052](https://core-electronics.com.au/arduino-leonardo-without-headers.html) | Arduino Leonardo (Without Headers)  | $39.00 | Used to interface all sensors |
+|1 | [A000052](https://core-electronics.com.au/arduino-leonardo-without-headers.html) | Arduino Leonardo (Without Headers) | $39.00 | Used to interface all sensors |
 |1 | [XC4514](https://jaycar.com.au/p/XC4514) | Arduino Compatible DC Voltage Regulator | $7.95 | Converts 12V battery power to 5.2V for all weather station needs |
 |1 | [XC4486](https://jaycar.com.au/p/XC4486) | Arduino Compatible Logic Level Converter Module | $4.95 | enables bidirecional serial comms between Raspberry Pi and Arduino boards |
 |1 | [ADA4226](https://core-electronics.com.au/adafruit-ina260-high-or-low-side-voltage-current-power-sensor.html) | Adafruit INA260 High or Low Side Voltage, Current, Power Sensor | $22.51 | measures power and voltage used by total circuit |
