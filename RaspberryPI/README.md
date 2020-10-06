@@ -17,6 +17,8 @@
 
 ## **Hardware**
 
+![alt text](images/rp1.png "Raspberry PI 3A+")
+
 The goal is to launch a python script on reboot of the Raspberry PI and have the script restart if it crashes. We are using a Raspberry PI 3A+ and run all scripts using Python 3 which we assume has been installed.
 
 Raspberry PI 3A+. We are using this version since it uses less power, is cheaper, has a smaller form factor but has wifi and the one USB port is sufficient.
