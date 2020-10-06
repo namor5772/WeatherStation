@@ -31,7 +31,7 @@ This document describes the design, building and programming of an IOT enabled w
 1. Voltage (V) - at the inputs to the circuits voltage regulator
 1. Power (W) - drawn by the weather station ( as A*V above)
 
-This data can be remotely accessed via a php nginx web server interface from the Raspberry Pi, which also enables add-hoc contol and data requests. There is also a camera (attached to the Raspberry Pi) which can be be controlled to take pictures on demand.
+This data can be remotely accessed via a php nginx web server interface from the Raspberry Pi, which also enables add-hoc contol and data requests. There is also a camera (attached to the Raspberry Pi) which can be controlled to take pictures on demand.
 
 The hardware is based on a Raspberry Pi 3A+ and an Arduino Leonardo together with a Vero strip board that contains the Voltage Regulator and all other "glue" circuits. Everything is powered by a 12V 100Ah AGM Deep Cycle Battery which is charged by a 12V 150W Solar panel via a PWM Solar charge controller. The 12V input is regulated to 5.2V for the Raspberry Pi. This is is also used as required for charging the wifi modem, powering the Arduino (from the Raspberry Pi), powering sensors, servos and the digital relay. The Raspberry Pi runs the web server and a python program that operates a bi-directional serial communications channel with the Arduino. The latter is ultimately attached to the various weather sensors. It also controls the digital relay used to time the charging of the wifi modem and the servo used to reset it. Control messages are typically sent from the Raspberry Pi via the serial channel to the Arduino (running a C++ program) which then returns sensor results or performs requested actions and returns confirmation messages.
 
