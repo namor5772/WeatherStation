@@ -6,6 +6,8 @@
 - [Setup Raspberry PI](#Setup-Raspberry-PI)
 - [Setup Arduino](#Setup-Arduino)
 - [Build circuit board](#Build-circuit-board)
+  - [Install TinyCAD](#Install-TinyCAD)
+  - [Install VeeCAD](#Install-VeeCAD)
 - [Assemble weather station](#Assemble-weather-station)
 - [Use weather station](#Use-weather-station)
 - [List of parts](#List-of-parts)
@@ -51,7 +53,11 @@ Details on how to set it up are given [**HERE**](Arduino/README.md).
 
 ## Build circuit board
 
-Complete
+### Install TinyCAD
+
+[**DOWNLOAD**](https://www.tinycad.net/Home/Download) TinyCAD if you dont already have it.
+
+### Install VeeCAD
 
 ## Assemble weather station
 
