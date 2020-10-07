@@ -72,6 +72,7 @@ Finally we assume that all the generic TinyCAD and VeeCAD symbols libraries are 
 
 ![alt text](images/BindaWeatherMain1.png "BindaWeatherMain1.dsn in TinyCAD")
 ![alt text](images/BindaWeatherMain1b.png "BindaWeatherMain1.dsn in TinyCAD")
+![alt text](images/BindaWeatherMain1c.png "BindaWeatherMain1.dsn in TinyCAD")
 
 
 ### Install VeeCAD
