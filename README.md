@@ -68,7 +68,10 @@ Now install the above custom symbol library **V_RomansOwn2020.TCLib** from the m
 
 ![alt text](images/TinyCAD1.png "Install custom TinyCAD library")
 
-Finally we assume that all the generic TinyCAD and VeeCAD symbols libraries are installed.
+Finally we assume that all the generic TinyCAD and VeeCAD symbols libraries are installed and now we can open and view BindaWeatherMain1.dsn with TinyCAD:
+
+![alt text](images/BindaWeatherMain1.png "BindaWeatherMain1.dsn in TinyCAD")
+
 
 ### Install VeeCAD
 
