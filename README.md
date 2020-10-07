@@ -55,16 +55,18 @@ Details on how to set it up are given [**HERE**](Arduino/README.md).
 
 ### Install TinyCAD
 
-[**DOWNLOAD**](https://www.tinycad.net/Home/Download)  and install TinyCAD if you don't already have it.
+[**DOWNLOAD**](https://www.tinycad.net/Home/Download) and install TinyCAD if you don't already have it.
+
+In addition we need the following files. They can reside in any directories (on the PC where TinyCAD is installed) when copied from here.
 
 | File | Description |
 | --- | --- |
 | [V_RomansOwn2020.TCLib](data/V_RomansOwn2020.TCLib) | TinyCAD library file with needed custom symbols |
 | [BindaWeatherMain1.dsn](data/BindaWeatherMain1.dsn) | Actual TinyCAD file for this projects circuit board |
 
-The above files are needed. They can reside in any directories when copied from here.
+Now install the above custom symbol library ```V_RomansOwn2020.TCLib``` from the main menu of TinyCAD: ```Library=>Libraries..=>Add=>V_RomansOwn2020.TCLib=>Open=>Ok```
 
-Install the above custom symbol library ```V_RomansOwn2020.TCLib``` from the main menu: Library=>Libraries..=>Add=>V_RomansOwn2020.TCLib=>Open=>Ok.
+
 
 
 ### Install VeeCAD
