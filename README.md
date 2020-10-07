@@ -64,14 +64,11 @@ In addition we need the following files. They can reside in any directories (on 
 | [V_RomansOwn2020.TCLib](data/V_RomansOwn2020.TCLib) | TinyCAD library file with needed custom symbols |
 | [BindaWeatherMain1.dsn](data/BindaWeatherMain1.dsn) | Actual TinyCAD file for this projects circuit board |
 
-Now install the above custom symbol library ```V_RomansOwn2020.TCLib``` from the main menu of TinyCAD: Library=>Libraries..=>Add=>V_RomansOwn2020.TCLib=>Open=>Ok
+Now install the above custom symbol library **V_RomansOwn2020.TCLib** from the main menu of TinyCAD: **Library=>Libraries..=>Add=>V_RomansOwn2020.TCLib=>Open=>Ok**
 
 ![alt text](images/TinyCAD1.png "Install custom TinyCAD library")
 
-
-
-
-
+Finally we assume that all the generic TinyCAD and VeeCAD symbols libraries are installed.
 
 ### Install VeeCAD
 
