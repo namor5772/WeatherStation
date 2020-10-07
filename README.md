@@ -58,7 +58,7 @@ Details on how to set it up are given [**HERE**](Arduino/README.md).
 [**DOWNLOAD**](https://www.tinycad.net/Home/Download)  and install TinyCAD if you don't already have it.
 
 | File | Description |
-| --- | --- | --- |
+| --- | --- |
 | [V_RomansOwn2020.TCLib](data/V_RomansOwn2020.TCLib) | TinyCAD library file with needed custom symbols |
 | [BindaWeatherMain1.dsn](data/BindaWeatherMain1.dsn) | Actual TinyCAD file for this projects circuit board |
 
