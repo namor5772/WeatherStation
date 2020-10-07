@@ -62,15 +62,15 @@ In addition we need the following files. They can reside in any directories (on 
 | File | Description |
 | --- | --- |
 | [V_RomansOwn2020.TCLib](data/V_RomansOwn2020.TCLib) | TinyCAD library file with needed custom symbols |
-| [BindaWeatherMain1.dsn](data/BindaWeatherMain1.dsn) | Actual TinyCAD file for this projects circuit board |
+| [WeatherStationMain1.dsn](data/WeatherStationMain1.dsn) | Actual TinyCAD file for this projects circuit board |
 
 Now install the above custom symbol library **V_RomansOwn2020.TCLib** from the main menu of TinyCAD: **Library=>Libraries..=>Add=>V_RomansOwn2020.TCLib=>Open=>Ok**
 
 ![alt text](images/TinyCAD1.png "Install custom TinyCAD library")
 
-Finally we assume that all the generic TinyCAD and VeeCAD symbols libraries are installed and now we can open and view BindaWeatherMain1.dsn with TinyCAD:
+Finally we assume that all the generic TinyCAD and VeeCAD symbols libraries are installed and now we can open and view WeatherStationMain1.dsn with TinyCAD:
 
-![alt text](images/BindaWeatherMain1b.png "BindaWeatherMain1.dsn in TinyCAD")
+![alt text](images/WeatherStationMain1.png "WeatherStationMain1.dsn in TinyCAD")
 
 ### Install VeeCAD
 
