@@ -32,7 +32,7 @@ It is powered by 5.2V and when in production the one USB connection is used to p
 
 Their only purpose is to setup bidirectional serial communications to the Arduino.
 
-By explicit design there are no sensors (apart from the camera) attached to the Raspberry PI. Its "only" purpose is to interface to the world via a website interface, ask the Arduino for sensor readings as well as act on its behalf and also store collected data.
+By explicit design there are no sensors (apart from the camera) attached directly to the Raspberry PI. Its "only" purpose is to interface to the world via a website interface, ask the Arduino for sensor readings as well as act on its behalf and also store collected data.
 
 In the following sections we detail precisely how to add and configure all the software that is needed on this Raspberry PI. Once completed we will have an SD card that boots to the intended IOT environment.
 
