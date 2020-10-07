@@ -55,7 +55,17 @@ Details on how to set it up are given [**HERE**](Arduino/README.md).
 
 ### Install TinyCAD
 
-[**DOWNLOAD**](https://www.tinycad.net/Home/Download) TinyCAD if you dont already have it.
+[**DOWNLOAD**](https://www.tinycad.net/Home/Download)  and install TinyCAD if you don't already have it.
+
+| File | Description |
+| --- | --- | --- |
+| [V_RomansOwn2020.TCLib](data/V_RomansOwn2020.TCLib) | TinyCAD library file with needed custom symbols |
+| [BindaWeatherMain1.dsn](data/BindaWeatherMain1.dsn) | Actual TinyCAD file for this projects circuit board |
+
+The above files are needed. They can reside in any directories when copied from here.
+
+Install the above custom symbol library ```V_RomansOwn2020.TCLib``` from the main menu: Library=>Libraries..=>Add=>V_RomansOwn2020.TCLib=>Open=>Ok.
+
 
 ### Install VeeCAD
 
@@ -73,7 +83,7 @@ Complete
 
 | Qty | Product | Description | AUD Cost | Comment |
 | --- | ---- | --- | --- | --------------- |
-|1 | [CE05971](https://core-electronics.com.au/raspberry-pi-3-model-a-plus.html) | Raspberry Pi 3 Model A+ | $44.51 | Used for internet connection/control and storing collected data | 
+|1 | [CE05971](https://core-electronics.com.au/raspberry-pi-3-model-a-plus.html) | Raspberry Pi 3 Model A+ | $44.51 | Used for internet connection/control and storing collected data |
 |1 | [A000052](https://core-electronics.com.au/arduino-leonardo-without-headers.html) | Arduino Leonardo (Without Headers) | $39.00 | Used to interface all sensors |
 |1 | [XC4514](https://jaycar.com.au/p/XC4514) | Arduino Compatible DC Voltage Regulator | $7.95 | Converts 12V battery power to 5.2V for all weather station needs |
 |1 | [XC4486](https://jaycar.com.au/p/XC4486) | Arduino Compatible Logic Level Converter Module | $4.95 | enables bidirecional serial comms between Raspberry Pi and Arduino boards |
