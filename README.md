@@ -57,22 +57,40 @@ Details on how to set it up are given [**HERE**](Arduino/README.md).
 
 [**DOWNLOAD**](https://www.tinycad.net/Home/Download) and install TinyCAD if you don't already have it.
 
-In addition we need the following files. They can reside in any directories (on the PC where TinyCAD is installed) when copied from here.
+In addition we need the following files. They can reside in any directories (on the PC where TinyCAD is installed) when copied from here or recreated.
 
 | File | Description |
 | --- | --- |
 | [V_RomansOwn2020.TCLib](data/V_RomansOwn2020.TCLib) | TinyCAD library file with needed custom symbols |
 | [WeatherStationMain1.dsn](data/WeatherStationMain1.dsn) | Actual TinyCAD file for this projects circuit board |
+| [WeatherStationMain1.net](data/WeatherStationMain1.net) | PCB netlist created in Protel format from above file |
 
 Now install the above custom symbol library **V_RomansOwn2020.TCLib** from the main menu of TinyCAD: **Library=>Libraries..=>Add=>V_RomansOwn2020.TCLib=>Open=>Ok**
 
 ![alt text](images/TinyCAD1.png "Install custom TinyCAD library")
 
-Finally we assume that all the generic TinyCAD and VeeCAD symbols libraries are installed and now we can open and view WeatherStationMain1.dsn with TinyCAD:
+Finally we assume that all the generic TinyCAD and VeeCAD symbols libraries are installed and now we can open and view **WeatherStationMain1.dsn** with TinyCAD:
 
 ![alt text](images/WeatherStationMain1.png "WeatherStationMain1.dsn in TinyCAD")
 
+With the above *.dsn file loaded we can check and recreate (if we want to) the Protel netlist file **WeatherStationMain1.net** (mentioned above). To avoid warnings filter the checking options as follows:
+
+![alt text](images/TinyCAD2.png "TinyCAD netlist design rule checks")
+
+Use **Special=>Create PCB Net List...=>Export**
+
+![alt text](images/TinyCAD3.png "TinyCAD netlist creation dialog")
+
 ### Install VeeCAD
+
+[**DOWNLOAD**](https://veecad.com/downloads.html) and install VeeCAD if you don't already have it.
+
+In addition we need the following files. They can reside in any directories (on the PC where TinyCAD is installed) when copied from here.
+
+| File | Description |
+| --- | --- |
+| [V_RomansOwn2020.TCLib](data/V_RomansOwn2020.TCLib) | TinyCAD library file with needed custom symbols |
+| [WeatherStationMain1.dsn](data/WeatherStationMain1.dsn) | PCB netlist created in Protel format from above file |
 
 ## Assemble weather station
 
