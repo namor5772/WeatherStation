@@ -102,7 +102,7 @@ We can also modify or recreate it by pressing: **Netlist=>Import=>Import** with 
 
 ## Assemble weather station
 
-This is the best view of **WeatherStationMain1.per** for building the Vero board circuit. It displays component designators and not values.
+This following is the best view of **WeatherStationMain1.per** for building the Vero board circuit. It displays component designators and not values.
 Print it out 100% scale and stick it onto the track-free side of the board.
 
 ![alt text](images/VeeCAD2.png "Vero Board circuit layout file - alt view ")
