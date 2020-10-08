@@ -85,12 +85,18 @@ Use **Special=>Create PCB Net List...=>Export**
 
 [**DOWNLOAD**](https://veecad.com/downloads.html) and install VeeCAD if you don't already have it.
 
-In addition we need the following files. They can reside in any directories (on the PC where TinyCAD is installed) when copied from here.
+In addition we need the following files. They can reside in any directories (on the PC where VeeCAD is installed) when copied from here.
 
 | File | Description |
 | --- | --- |
-| [V_RomansOwn2020.TCLib](data/V_RomansOwn2020.TCLib) | TinyCAD library file with needed custom symbols |
-| [WeatherStationMain1.dsn](data/WeatherStationMain1.dsn) | PCB netlist created in Protel format from above file |
+| [V_Standard_RMG.per](data/V_Standard_RMG.per) | Custom VeeCAD shape library file |
+| [WeatherStationMain1.per](data/WeatherStationMain1.per) | Vero Board circuit layout file |
+
+Our ultimate goal is to have a valid circuit layout file to help us build the hardware. To view it we just need to open **WeatherStationMain1.per** in VeeCAD.
+
+![alt text](images/WeatherStationMain2.png "Vero Board circuit layout file")
+
+We can ...
 
 ## Assemble weather station
 
