@@ -96,7 +96,9 @@ Our ultimate goal is to have a valid circuit layout file to help us build the ha
 
 ![alt text](images/WeatherStationMain2.png "Vero Board circuit layout file")
 
-We can ...
+We can also modify or recreate it by pressing: **Netlist=>Import=>Import** with **WeatherStationMain1.per** open and dialog set to:
+
+![alt text](images/VeeCAD1.png "VeeCAD Import Netlist dialog")
 
 ## Assemble weather station
 
