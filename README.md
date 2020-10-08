@@ -102,7 +102,12 @@ We can also modify or recreate it by pressing: **Netlist=>Import=>Import** with 
 
 ## Assemble weather station
 
-Complete
+This is the best view of **WeatherStationMain1.per** for building the Vero board circuit. It displays component designators and not values.
+Print it out 100% scale and stick it onto the track-free side of the board.
+
+![alt text](images/VeeCAD2.png "Vero Board circuit layout file - alt view ")
+
+![alt text](images/WeatherStationMain3.png "Vero Board circuit layout file - alt view ")
 
 ## Use weather station
 
@@ -138,7 +143,7 @@ Complete
 
 ### Connectors
 
-| Qty | Product | Description | AUD Cost | Commen t |
+| Qty | Product | Description | AUD Cost | Comment |
 | --- | ---- | --- | --- | - |
 |1 | [HP9544](https://jaycar.com.au/p/HP9544) | PC Boards Vero Type Strip - 95mm x 305mm| $12.95 | Contains all circuits apart from Raspberry Pi and Arduino |
 |1 | [WW4030](https://jaycar.com.au/p/WW4030) | Tinned Copper Wire - 100 gram Roll | $19.95 | for wiring up above Vero board |
