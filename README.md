@@ -123,7 +123,7 @@ Complete
   
 ### Core components
 
-| Qty | Product | Description | AUD Cost | Comment |    Designator    |
+| Qty | Product | Description | AUD Cost | Comment | Designator____ |
 | --- | --- | --- | --- | --- | --- |
 |1 | [CE05971](https://core-electronics.com.au/raspberry-pi-3-model-a-plus.html) | Raspberry Pi 3 Model A+ | $44.51 | Used for internet connection/control and storing collected data | connected to J2 and J8. Also camera attached |
 |1 | [A000052](https://core-electronics.com.au/arduino-leonardo-without-headers.html) | Arduino Leonardo (Without Headers) | $39.00 | Used to interface all sensors | connected to J3, J5, J6 and J9 |
@@ -149,7 +149,7 @@ Complete
 
 ### Connectors
 
-| Qty | Product | Description | AUD Cost | Comment | Designator |
+| Qty | Product | Description | AUD Cost | Comment | Designator____ |
 | --- | --- | --- | --- | --- | --- |
 |1 | [HP9544](https://jaycar.com.au/p/HP9544) | PC Boards Vero Type Strip - 95mm x 305mm| $12.95 | Contains all circuits apart from Raspberry Pi and Arduino |
 |1 | [WW4030](https://jaycar.com.au/p/WW4030) | Tinned Copper Wire - 100 gram Roll | $19.95 | for wiring up above Vero board |
