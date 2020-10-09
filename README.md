@@ -17,7 +17,6 @@
 
 ## Summary
 
-![alt text](images/ws2.png "Weather station circuit board")
 ![alt text](images/ws1.png "Weather station enclosure")
 
 This document describes the design, building and programming of an IOT enabled weather station. At regular intervals (eg. every 10 minutes) it measures a range of weather and other statistics, saving them as time stamped rows to an updated csv file. In particular:
@@ -120,6 +119,9 @@ The component designators/Items can be matched to the List of Parts below for so
 ![alt text](images/vb2.png "Vero Board build - image #2")
 
 ![alt text](images/vb1.png "Vero Board build - image #3")
+
+Finally use **WeatherStationMain1.dsn**  to wire everything up.
+![alt text](images/ws2.png "Weather station circuit board")
 
 ## Use weather station
 
