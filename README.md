@@ -113,7 +113,13 @@ It is useful to print out a list of items (ie. designators) as shown below: **Bo
 
 ![alt text](images/VeeCAD3.png "Vero Board circuit List of parts")
 
-The component designators/Items can be matched to the List of Parts below for soldering:
+The component designators/Items can be matched to the List of Parts below for soldering. Below are several images of the Vero circuit board during construction. Note that J12 is missing by mistake and was installed later.
+
+![alt text](images/vb3.png "Vero Board build - image #1")
+
+![alt text](images/vb2.png "Vero Board build - image #2")
+
+![alt text](images/vb1.png "Vero Board build - image #3")
 
 ## Use weather station
 
