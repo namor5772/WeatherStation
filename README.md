@@ -128,7 +128,7 @@ The servo has to be glued with arildite to the top of the wifi-dongle near its o
 
 ## Use weather station
 
-Complete
+Once the weather station is running, it just sits there collecting 
 
 ## List of parts
   
