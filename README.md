@@ -128,7 +128,19 @@ The servo has to be glued with arildite to the top of the wifi-dongle near its o
 
 ## Use weather station
 
-Once the weather station is running, it just sits there collecting 
+Once the weather station is running, it just sits there collecting weather data every 10 minutes and appending it to a csv file. It can be accessed and controlled via a web interface which is displayed below after the **help** command is submitted.
+
+![alt text](images/iot1.png "web site - after help command")
+
+The most important command is **gd** which displays a link to the most recently updated weather data file **SensorData.csv**. This can be downloaded and conveniently formatted and displayed in an Excel workbook.
+
+![alt text](images/iot2.png "web site - after gd command")
+
+The other commands are for fun, maintenance or testing. Note for instance the **tp** command which takes and displays a photo with the Raspberry PI camera:
+
+![alt text](images/iot3.png "web site - after tp command")
+
+# *HAVE FUN!*
 
 ## List of parts
   
