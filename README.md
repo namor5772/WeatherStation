@@ -123,6 +123,9 @@ The component designators/Items can be matched to the List of Parts below for so
 Finally use **WeatherStationMain1.dsn**  to wire everything up.
 ![alt text](images/ws2.png "Weather station circuit board")
 
+The servo has to be glued with arildite to the top of the wifi-dongle near its on/off button.
+![alt text](images/wd1.png "Weather station circuit board")
+
 ## Use weather station
 
 Complete
