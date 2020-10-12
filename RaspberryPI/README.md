@@ -1,6 +1,6 @@
 # **Raspberry PI setup**
 
-## **Contents**
+## **Contents...**
 
 - [Hardware](#Hardware)
 - [SD Card](#SD-Card)
