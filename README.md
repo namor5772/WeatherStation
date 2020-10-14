@@ -17,7 +17,6 @@
   - [External components](#External-components)
 - [Miscellaneous](#Miscellaneous)
 
-
 ## Summary
 
 ![alt text](images/ws1.png "Weather station enclosure")
@@ -220,4 +219,14 @@ TBC
 
 ## Miscellaneous
 
-The fox jumped over the lazy dog
+# Editing this GitHub Repository
+
+All in a Windows 10 environment:
+
+* Install GitHub Desktop
+*  Install Visual Studio Code
+* Setup start command prommt
+  * This assumes Visual Studio 2019 Communiy Edition has been installed
+  * installed   
+
+The fox jumped over the lazy dog --
