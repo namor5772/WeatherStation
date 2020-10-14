@@ -144,7 +144,7 @@ The other commands are for fun, maintenance or testing. Note for instance the **
 
 ![alt text](images/iot3.png "web site - after tp command")
 
-# *HAVE FUN!*
+### *THE END...*
 
 ## Design characteristics
 
@@ -229,4 +229,4 @@ All in a Windows 10 environment:
   * This assumes Visual Studio 2019 Communiy Edition has been installed
   * installed   
 
-The fox jumped over the lazy dog ----
+The fox jumped over the lazy dog
