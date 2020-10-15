@@ -1,4 +1,4 @@
-# WeatherStation
+# Weather Station
 
 ## **Contents**
 
