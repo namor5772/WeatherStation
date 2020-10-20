@@ -1,6 +1,6 @@
 # Weather Station
 
-## **Contents --**
+## **Contents**
 
 - [Summary](#Summary)
 - [Setup Raspberry PI](#Setup-Raspberry-PI)
