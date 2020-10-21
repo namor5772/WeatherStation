@@ -159,10 +159,6 @@ The other commands are for fun, maintenance or testing. Note for instance the **
 DESCRIBE THE GRAPHING OF WEATHER DATA
 ***********************************
 
-## Design characteristics
-
-TBC
-
 ## List of parts
   
 ### Core components
@@ -231,15 +227,3 @@ TBC
 |1 | [COU2AMB02](https://www.officeworks.com.au/shop/officeworks/p/comsol-male-type-a-usb-2-0-to-male-mini-usb-cable-2m-cou2amb02) | USB A to Mini-B 2M Cable | $14.88 | power to above wifi dongle from Vero board power circuit |
 
 ## Miscellaneous
-
-# Editing this GitHub Repository
-
-All in a Windows 10 environment:
-
-* Install GitHub Desktop
-*  Install Visual Studio Code
-* Setup start command prommt
-  * This assumes Visual Studio 2019 Communiy Edition has been installed
-  * installed   
-
-The fox jumped over the lazy dog
