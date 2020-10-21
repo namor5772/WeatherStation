@@ -10,6 +10,7 @@
   - [Install VeeCAD](#Install-VeeCAD)
 - [Assemble weather station](#Assemble-weather-station)
 - [Use weather station](#Use-weather-station)
+  - [Automate data collection](#Automate-data-collection)
 - [Design characteristics](#Design-characteristics)
 - [List of parts](#List-of-parts)
   - [Core components](#Core-components)
@@ -155,6 +156,7 @@ The most important command is **gd** which displays a link to the most recently 
 
 ![alt text](images/iot2.png "web site - after gd command")
 
+### Automate data collection
 ***********************************
 DESCRIBE THE GRAPHING OF WEATHER DATA
 - Using python with Beautiful soup we can completely automate this process
