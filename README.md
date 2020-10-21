@@ -130,6 +130,17 @@ Finally use **WeatherStationMain1.dsn**  to wire everything up.
 The servo has to be glued with araldite to the top of the wifi-dongle near its on/off button.
 ![alt text](images/wd1.png "Wifi Dongle with Servo attached")
 
+************************************
+SHOW BIG DIAGRAM OF TOTAL WEATHER STATION with labels and some photos.
+Describe the components with details
+ - Solar Panel and controller
+ - Battery and box
+ - Connection from battery to circuit board
+ - Connection from circuit board to wifi dongle and servo
+ - Connection from circuit board to I2C temp, himidity and pressure sensor
+ - Connections to Wind speed, direction and rain sensors
+************************************
+
 ## Use weather station
 
 Once the weather station is running, it just sits there collecting weather data every 10 minutes and appending it to a csv file. It can be accessed and controlled via a web interface which is displayed below after the **help** command is submitted.
@@ -144,7 +155,9 @@ The other commands are for fun, maintenance or testing. Note for instance the **
 
 ![alt text](images/iot3.png "web site - after tp command")
 
-### *THE END...*
+***********************************
+DESCRIBE THE GRAPHING OF WEATHER DATA
+***********************************
 
 ## Design characteristics
 
