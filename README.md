@@ -147,16 +147,23 @@ Once the weather station is running, it just sits there collecting weather data 
 
 ![alt text](images/iot1.png "web site - after help command")
 
-The most important command is **gd** which displays a link to the most recently updated weather data file **SensorData.csv**. This can be downloaded and conveniently formatted and displayed in an Excel workbook.
-
-![alt text](images/iot2.png "web site - after gd command")
-
 The other commands are for fun, maintenance or testing. Note for instance the **tp** command which takes and displays a photo with the Raspberry PI camera:
 
 ![alt text](images/iot3.png "web site - after tp command")
 
+The most important command is **gd** which displays a link to the most recently updated weather data file **SensorData.csv**. This can be downloaded and conveniently formatted and displayed in an Excel workbook.
+
+![alt text](images/iot2.png "web site - after gd command")
+
 ***********************************
 DESCRIBE THE GRAPHING OF WEATHER DATA
+- Using python with Beautiful soup we can completely automate this process
+- Assume python installed on the PC.
+- Install Beautiful soup module
+- Install pyexel? module
+- python script and batch file
+- Excel workbook with macro button
+- explain data processing and show graphs
 ***********************************
 
 ## List of parts
