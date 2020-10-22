@@ -12,7 +12,7 @@
   - [Build circuit board](#Build-circuit-board)
   - [Assemble electronics](#Assemble-electronics)
   - [Attach BMP28 sensors](#Attach-BMP280-sensors)
-  - [Attach wind & rain guages](#Attach-wind-&-rain-guages)
+  - [Attach wind and rain guages](#Attach-wind-and-rain-guages)
   - [Attach wifi interface](#Attach-wifi-interface)
   - [Attach camera](#Attach-camera)
   - [Attach power](#Attach-power)  
@@ -148,7 +148,7 @@ Finally use **WeatherStationMain1.dsn**  to wire everything up.
 
 [BMP280 I2C EXTERNAL SENSOR IN CORFLUTE HOUSING AND SIELDED WIRING]
 
-### Attach wind & rain guages
+### Attach wind and rain guages
 
 [EXTERNAL WIND & RAIN SENSORS]
 
