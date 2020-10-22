@@ -197,10 +197,16 @@ Apart from downloading the above two files you will need to install the "request
   ![alt text](images/requests.png "Install requests python module")
 - The directory from which you run the above is irrelevant.
 
-Now you can open the Excel workbook **SensorData.xlsm**. Go to the <Graphs> tab and press the [FULL DATA UPDATE] button. See below:
+Now you can open the Excel workbook **SensorData.xlsm**. Go to the "Graphs" tab and press the [FULL DATA UPDATE] button. See below:
 ![alt text](images/SensorData_xlsm.png "Install requests python module")
 
 This should download the most recent updated weather data file **SensorData.csv** and display the last 3.05 (in this case) days (as detailed in cell T9). You can change this up to "max days" (cell T7) and press the [PROCESS DATA] button to update the graphs.
+
+Visible above is the first of four graphs. The others are placed below it and can be made visible by scrolling down (or pressing the "Page Down" button).
+
+The "Data" tab contains the SensorData.csv data in columns A:K starting at row 2. These are processed/scaled in columns L:R and are displayed in some of the graphs.
+
+The Macros reside in the "MyModule" module. Examine them for details and adjust the directories and/or file names in the global constant strings if necessary.  
 
 ## List of parts
   
