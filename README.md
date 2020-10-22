@@ -5,10 +5,17 @@
 - [Summary](#Summary)
 - [Setup Raspberry PI](#Setup-Raspberry-PI)
 - [Setup Arduino](#Setup-Arduino)
-- [Build circuit board](#Build-circuit-board)
+- [Design circuit board](#Design-circuit-board)
   - [Install TinyCAD](#Install-TinyCAD)
   - [Install VeeCAD](#Install-VeeCAD)
 - [Assemble weather station](#Assemble-weather-station)
+  - [Build circuit board](#Build-circuit-board)
+  - [Assemble electronics](#Assemble-electronics)
+  - [Attach BMP28 sensors](#Attach-BMP280-sensors)
+  - [Attach wind & rain guages](#Attach-wind-&-rain-guages)
+  - [Attach wifi interface](#Attach-wifi-interface)
+  - [Attach camera](#Attach-camera)
+  - [Attach power](#Attach-power)  
 - [Use weather station](#Use-weather-station)
   - [Access web interface](#Access-web-interface)
   - [Automate data collection](#Automate-data-collection)
@@ -56,7 +63,7 @@ We are using a Arduino Leonardo (Without Headers).
 
 Details on how to set it up are given [**HERE**](Arduino/README.md).
 
-## Build circuit board
+## Design circuit board
 
 ### Install TinyCAD
 
@@ -107,6 +114,14 @@ We can also modify or recreate it by pressing: **Netlist=>Import=>Import** with 
 
 ## Assemble weather station
 
+[SHOW THE WEATHER STATION VISIO CONCEPT DIAGRAM] 
+
+  - [Attach camera](#Attach-camera)
+  - [Attach power](#Attach-power)  
+
+
+### Build circuit board
+
 The following is the best view of **WeatherStationMain1.per** in VeeCAD for building the Vero board circuit. It displays component designators and not values.
 Print it out 100% scale with the setups displayed below and stick it onto the track-free side of of an appropriately sized piece of Vero Board.
 
@@ -129,8 +144,32 @@ The component designators/Items can be matched to the List of Parts below for so
 Finally use **WeatherStationMain1.dsn**  to wire everything up.
 ![alt text](images/ws2.png "Weather station circuit board")
 
+### Assemble electronics
+
+[CORFLUTE BOX WITH ALL INTERNAL ELECTRONICS WIRED UP. IE RASPBERRY PI, ARDUINO LEONARDO AND VERO CIRCUIT BOARD]
+
+### Attach BMP280 sensors
+
+[BMP280 I2C EXTERNAL SENSOR IN CORFLUTE HOUSING AND SIELDED WIRING]
+
+### Attach wind & rain guages
+
+[EXTERNAL WIND & RAIN SENSORS]
+
+[MENTION INTERNAL SENSORS, CPU TEMP, POWER, VOLTAGE & AMP USAGE]
+
+### Attach wifi interface
+
 The servo has to be glued with araldite to the top of the wifi-dongle near its on/off button.
 ![alt text](images/wd1.png "Wifi Dongle with Servo attached")
+
+### Attach camera
+
+[RASPBERRY PI CAMERA - COULD IN FUTURE BE EXTERNAL]
+
+### Attach power
+
+[SOLAR PANEL, CONTROLLER, BATTERY AND BOX]
 
 ************************************
 SHOW BIG DIAGRAM OF TOTAL WEATHER STATION with labels and some photos.
