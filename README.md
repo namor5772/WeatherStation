@@ -10,6 +10,7 @@
   - [Install VeeCAD](#Install-VeeCAD)
 - [Assemble weather station](#Assemble-weather-station)
 - [Use weather station](#Use-weather-station)
+  - [Access web interface](#Access-web-interface)
   - [Automate data collection](#Automate-data-collection)
 - [Design characteristics](#Design-characteristics)
 - [List of parts](#List-of-parts)
@@ -143,6 +144,8 @@ Describe the components with details
 ************************************
 
 ## Use weather station
+
+### Access web interface
 
 Once the weather station is running, it just sits there collecting weather data every 10 minutes and appending it to a csv file. It can be accessed and controlled via a web interface which is displayed below after the **help** command is submitted.
 
