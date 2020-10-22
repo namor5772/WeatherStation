@@ -157,6 +157,20 @@ The most important command is **gd** which displays a link to the most recently 
 ![alt text](images/iot2.png "web site - after gd command")
 
 ### Automate data collection
+
+Through the magic of python and the "requests" module we are able to create an Excel workbook with a button activated macro that downloads, processes, formats and graphs the most recent data from the weather station. There is no need to explicitly access the data as shown above via the "gd" command.
+
+We assume the latest version of Python3 has been setup on your PC. For example into the default directory: **C:/Users/roman/AppData/Local/Programs/Python/Python39/**.
+
+All the related files are assumed to be located in the: **C:/Users/roman/Documents/GitHub/WeatherStation/data** directory. In particular **SensorData.csv**, **SensorData.xlsm** and **SensorData.py**. Current instances can be downloaded from this repository: 
+
+- [HERE](SensorData.csv) for SensorData.csv
+- [HERE](SensorData.xlsm) for SensorData.xlsm
+- [HERE](SensorData.py) for SensorData.py
+
+The directories are arbitrary as long as any references to them are adjusted in the SensorData.xlsm and SensorData.py files.
+
+
 ***********************************
 DESCRIBE THE GRAPHING OF WEATHER DATA
 - Using python with Beautiful soup we can completely automate this process
