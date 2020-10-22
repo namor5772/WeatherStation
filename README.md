@@ -164,9 +164,9 @@ We assume the latest version of Python3 has been setup on your PC. For example i
 
 All the related files are assumed to be located in the: **C:/Users/roman/Documents/GitHub/WeatherStation/data** directory. In particular **SensorData.csv**, **SensorData.xlsm** and **SensorData.py**. Current instances can be downloaded from this repository: 
 
-- [HERE](SensorData.csv) for SensorData.csv
-- [HERE](SensorData.xlsm) for SensorData.xlsm
-- [HERE](SensorData.py) for SensorData.py
+- [HERE](data/SensorData.csv) for SensorData.csv
+- [HERE](data/SensorData.xlsm) for SensorData.xlsm
+- [HERE](data/SensorData.py) for SensorData.py
 
 The directories are arbitrary as long as any references to them are adjusted in the SensorData.xlsm and SensorData.py files.
 
