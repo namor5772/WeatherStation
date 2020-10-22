@@ -21,7 +21,7 @@
 
 ## Summary
 
-![alt text](images/ws10.png "Weather station on site")
+![alt text](images/ws11.png "Weather station on site")
 
 This document describes the design, building and programming of an IOT enabled weather station. At regular intervals (eg. every 10 minutes) it measures a range of weather and other statistics, saving them as time stamped rows to an updated csv file. In particular:
 
