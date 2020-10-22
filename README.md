@@ -196,16 +196,11 @@ Apart from downloading the above two files you will need to install the "request
 - If not already installed you should see something like this in the terminal window.
   ![alt text](images/requests.png "Install requests python module")
 - The directory from which you run the above is irrelevant.
-***********************************
-DESCRIBE THE GRAPHING OF WEATHER DATA
-- Using python with Beautiful soup we can completely automate this process
-- Assume python installed on the PC.
-- Install Beautiful soup module
-- Install pyexel? module
-- python script and batch file
-- Excel workbook with macro button
-- explain data processing and show graphs
-***********************************
+
+Now you can open the Excel workbook **SensorData.xlsm**. Go to the <Graphs> tab and press the [FULL DATA UPDATE] button. See below:
+![alt text](images/SensorData_xlsm.png "Install requests python module")
+
+This should download the most recent updated weather data file **SensorData.csv** and display the last 3.05 (in this case) days (as detailed in cell T9). You can change this up to "max days" (cell T7) and press the [PROCESS DATA] button to update the graphs.
 
 ## List of parts
   
