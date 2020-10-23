@@ -114,7 +114,9 @@ We can also modify or recreate it by pressing: **Netlist=>Import=>Import** with 
 ## Assemble weather station
 
 [SHOW THE WEATHER STATION VISIO CONCEPT DIAGRAM] 
-  
+
+![alt text](images/WeatherStation.png "Weather station concept diagram")
+
 ### Build circuit board
 
 The following is the best view of **WeatherStationMain1.per** in VeeCAD for building the Vero board circuit. It displays component designators and not values.
