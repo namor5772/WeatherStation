@@ -147,15 +147,22 @@ Use **WeatherStationMain1.dsn**  to wire everything up (pictured previously). Sc
 
 ![alt text](images/ws2.png "Weather station circuit board")
 
-Attach this to the base of a Corflute A4 sized weather proofed box. You will then need to drill four 10mm diameter holes in the base of the box in logically appropriate positions. These are needed for the wiring loom tubes. Doing so in the base is to avoid water ingress. The lid of the box is not shown, but it will need to be waterproofed with tape andeventually secured. The box itself will need to be waterproofed with tape.
+Attach this to the base of a Corflute A4 sized weather proofed box. You will then need to drill four 10mm diameter holes in the base of the box in logically appropriate positions. These are needed for the wiring loom tubes. Doing so in the base is to avoid water ingress. The lid of the box is not shown, but it will need to be waterproofed with tape and eventually secured. The box itself will need to be waterproofed with tape.
 
-![alt text](images/WeatherBox.png "Weather station circuit board")
+![alt text](images/WeatherBox.png "Weather station box")
 
-A wateproofed (with silicon) glass or respex window will also need to be made in the box (see in right side of the above picture). This is used to mount the Raspberry PI camera in a waterproof way
+The box was then placed on top of a milk crate, enabling the loom tubes to come out underneath. The Corflue box was then secured to the milk crate and the latter to the ground (in my case to a heavy wooden pallet).
+
+![alt text](images/WeatherBox2.png "Weather station box secured")
+
+A wateproofed (with silicon) glass or respex window will also need to be made in the box. This is used to mount the Raspberry PI camera in a waterproof way.
+
+![alt text](images/WeatherBox3.png "Weather station box secured")
+
 
 ### Attach BMP280 sensors
 
-[BMP280 I2C EXTERNAL SENSOR IN CORFLUTE HOUSING AND SIELDED WIRING]
+[BMP280 I2C EXTERNAL SENSOR IN CORFLUTE HOUSING AND SHIELDED WIRING]
 Expain wiring, connections, box and placements.
 [PICTURE]
 
