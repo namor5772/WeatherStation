@@ -116,7 +116,7 @@ We can also modify or recreate it by pressing: **Netlist=>Import=>Import** with 
 Below is the Weather Station concept diagram.
 
 It was created using MS Visio Professional and the original Visio file **WeatherStation.vsdx** is available
-[HERE](data/WeatherStation.vsdx) for your perusal.
+[HERE](data/WeatherStation.vsdx) for your perusal or modification.
 
 ![alt text](images/WeatherStationVisio2.png "Weather station concept diagram")
 
@@ -143,13 +143,15 @@ The component designators/Items can be matched to the List of Parts below for so
 
 ### Assemble electronics
 
-Use **WeatherStationMain1.dsn**  to wire everything up. Screw the boards with plastic spacers onto a Corflute (or other) base plate as displayed below:
+Use **WeatherStationMain1.dsn**  to wire everything up (pictured previously). Screw the boards with plastic spacers onto a Corflute (or other) base plate as displayed below:
 
 ![alt text](images/ws2.png "Weather station circuit board")
 
-This is then put into a Corflute A4 sized weather proofed box
+Attach this to the base of a Corflute A4 sized weather proofed box. You will then need to drill four 10mm diameter holes in the base of the box in logically appropriate positions. These are needed for the wiring loom tubes. Doing so in the base is to avoid water ingress. The lid of the box is not shown, but it will need to be waterproofed with tape andeventually secured. The box itself will need to be waterproofed with tape.
 
-[PICTURE]
+![alt text](images/WeatherBox.png "Weather station circuit board")
+
+A wateproofed (with silicon) glass or respex window will also need to be made in the box (see in right side of the above picture). This is used to mount the Raspberry PI camera in a waterproof way
 
 ### Attach BMP280 sensors
 
