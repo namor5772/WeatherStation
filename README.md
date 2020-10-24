@@ -113,7 +113,10 @@ We can also modify or recreate it by pressing: **Netlist=>Import=>Import** with 
 
 ## Assemble weather station
 
-[SHOW THE WEATHER STATION VISIO CONCEPT DIAGRAM] 
+Below is the Weather Station concept diagram.
+
+It was created using MS Visio Professional and the original Visio file **WeatherStation.vsdx** is available
+[HERE](data/WeatherStation.vsdx) for your perusal.
 
 ![alt text](images/WeatherStationVisio2.png "Weather station concept diagram")
 
