@@ -11,7 +11,7 @@
 - [Assemble weather station](#Assemble-weather-station)
   - [Build circuit board](#Build-circuit-board)
   - [Assemble electronics](#Assemble-electronics)
-  - [Attach BMP28 sensors](#Attach-BMP280-sensors)
+  - [Attach BME28 sensors](#Attach-BME280-sensors)
   - [Attach wind and rain guages](#Attach-wind-and-rain-guages)
   - [Attach wifi interface](#Attach-wifi-interface)
   - [Attach camera](#Attach-camera)
@@ -160,7 +160,7 @@ A wateproofed (with silicon) glass or respex window will also need to be made in
 ![alt text](images/WeatherBox3.png "Weather station box secured")
 
 
-### Attach BMP280 sensors
+### Attach BME280 sensor
 
 [BMP280 I2C EXTERNAL SENSOR IN CORFLUTE HOUSING AND SHIELDED WIRING]
 Expain wiring, connections, box and placements.
