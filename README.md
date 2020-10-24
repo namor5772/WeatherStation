@@ -11,7 +11,7 @@
 - [Assemble weather station](#Assemble-weather-station)
   - [Build circuit board](#Build-circuit-board)
   - [Assemble electronics](#Assemble-electronics)
-  - [Attach BME28 sensors](#Attach-BME280-sensors)
+  - [Attach BME280 sensors](#Attach-BME280-sensor)
   - [Attach wind and rain guages](#Attach-wind-and-rain-guages)
   - [Attach wifi interface](#Attach-wifi-interface)
   - [Attach camera](#Attach-camera)
