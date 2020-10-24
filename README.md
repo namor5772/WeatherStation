@@ -115,7 +115,7 @@ We can also modify or recreate it by pressing: **Netlist=>Import=>Import** with 
 
 [SHOW THE WEATHER STATION VISIO CONCEPT DIAGRAM] 
 
-![alt text](images/WeatherStationVisio.png "Weather station concept diagram")
+![alt text](images/WeatherStationVisio2.png "Weather station concept diagram")
 
 ### Build circuit board
 
