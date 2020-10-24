@@ -141,24 +141,33 @@ The component designators/Items can be matched to the List of Parts below for so
 
 ![alt text](images/vb1.png "Vero Board build - image #3")
 
-Finally use **WeatherStationMain1.dsn**  to wire everything up.
-![alt text](images/ws2.png "Weather station circuit board")
-
 ### Assemble electronics
 
-[CORFLUTE BOX WITH ALL INTERNAL ELECTRONICS WIRED UP. IE RASPBERRY PI, ARDUINO LEONARDO AND VERO CIRCUIT BOARD]
+Use **WeatherStationMain1.dsn**  to wire everything up. Screw the boards with plastic spacers onto a Corflute (or other) base plate as displayed below:
+
+![alt text](images/ws2.png "Weather station circuit board")
+
+This is then put into a Corflute A4 sized weather proofed box
+
+[PICTURE]
 
 ### Attach BMP280 sensors
 
 [BMP280 I2C EXTERNAL SENSOR IN CORFLUTE HOUSING AND SIELDED WIRING]
+Expain wiring, connections, box and placements.
+[PICTURE]
 
 ### Attach wind and rain guages
 
 [EXTERNAL WIND & RAIN SENSORS]
+Explain wiring, connections and placement.
+[PICTURE]
 
 [MENTION INTERNAL SENSORS, CPU TEMP, POWER, VOLTAGE & AMP USAGE]
 
 ### Attach wifi interface
+
+Explain Logic, wiring, connections and placament
 
 The servo has to be glued with araldite to the top of the wifi-dongle near its on/off button.
 ![alt text](images/wd1.png "Wifi Dongle with Servo attached")
@@ -166,21 +175,14 @@ The servo has to be glued with araldite to the top of the wifi-dongle near its o
 ### Attach camera
 
 [RASPBERRY PI CAMERA - COULD IN FUTURE BE EXTERNAL]
+[PICTURE]
 
 ### Attach power
 
+Explain
 [SOLAR PANEL, CONTROLLER, BATTERY AND BOX]
 
-************************************
-SHOW BIG DIAGRAM OF TOTAL WEATHER STATION with labels and some photos.
-Describe the components with details
- - Solar Panel and controller
- - Battery and box
- - Connection from battery to circuit board
- - Connection from circuit board to wifi dongle and servo
- - Connection from circuit board to I2C temp, himidity and pressure sensor
- - Connections to Wind speed, direction and rain sensors
-************************************
+[PICTURE]
 
 ## Use weather station
 
