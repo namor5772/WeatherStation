@@ -113,7 +113,7 @@ n=0
 n2=0
 
 # gap in minutes between data collection events (assume 60 % minGap == 0)
-minGap = 10
+minGap = 15
 hourGap = 24
 
 # data collection time gap

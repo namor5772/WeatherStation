@@ -162,9 +162,18 @@ A wateproofed (with silicon) glass or respex window will also need to be made in
 
 ### Attach BME280 sensor
 
+This sensor [ADA2652](https://core-electronics.com.au/adafruit-bme280-i2c-or-spi-temperature-humidity-pressure-sensor.html) measures temperature, pressure and humidity. It is located in a sheltered waterproof above ground box and away from the Electronics Box. This ensures (hopefully) that it returns relevant/accurate measurements. The wires connecting it to the Vero Board circuit are limited to 1 metre to avoid any transimssion problems with the I2C protocol and are enclosed in a 10mm diameter wiring loom tube [HP1225](https://jaycar.com.au/p/HP1225).
+
+Its box is made of corflute and waterproofed with tape. The base is open to enable accurate measurements but keep rain and significant winds out. Note: P should be E below.
+
+![alt text](images/BMP280box.png "Box for BME280")
+
+Examine the **WeatherStation1.dsn** diagrams [I2C Sensors] section to see how the wiring should be connected. Note: The I2C data and clock lines should use shielded cable [WB1506](https://jaycar.com.au/p/WB1506) while the power and ground can use light duty hookup wire [WH3004](https://jaycar.com.au/p/WH3004). For connecting, solder eight halves from socket to socket jumper leads [WC6026](https://jaycar.com.au/p/WC6026). We assume that the BME280 breakout board has a 7pin Header Terminal soldered to it (supplied):
+
+![alt text](images/BME280.png "BME280 breakout board")
+
 [BMP280 I2C EXTERNAL SENSOR IN CORFLUTE HOUSING AND SHIELDED WIRING]
 Expain wiring, connections, box and placements.
-[PICTURE]
 
 ### Attach wind and rain guages
 

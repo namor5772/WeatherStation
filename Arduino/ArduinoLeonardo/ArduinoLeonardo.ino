@@ -137,7 +137,7 @@ void loop() {
   // perform non-time critical actions if interrupt triggered (outside of ISR) 
   if (bINT) {
     if (bCA==1) {
-      // push last timestamp tsCA1 onto the end of the aCA[] array (element nCA-1). aCA[0] is lost.
+      // push last timestamp tsINT onto the end of the aCA[] array (element nCA-1). aCA[0] is lost.
       for (int j=1; j<nCA; j++) aCA[j-1] = aCA[j];
       aCA[nCA-1] = tsINT;
     }
