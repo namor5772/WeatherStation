@@ -265,9 +265,9 @@ Apart from downloading the above two files you will need to install the "request
 - The directory from which you run the above is irrelevant.
 
 Now you can open the Excel workbook **SensorData.xlsm**. Go to the "Graphs" tab and press the [FULL DATA UPDATE] button. See below:
-![alt text](imaes/SensorData_xlsm.png "SensorData.xlsm Graphs tab")
+![alt text](images/SensorData_xlsm.png "SensorData.xlsm Graphs tab")
 
-This should download the most recent updated weather data file **SensorData.csv** and display the last 3.05 (in this case) days (as detailed in cell T9). You can change this up to "max days" (cell T7) and press the [PROCESS DATA] button to update the graphs.
+This should download the most recent updated weather data file **SensorData.csv** and display the last 3.05 (in this case) days (as detailed in cell T9). You can change this up to "max days" (cell T7) and press the [PROCESS DATA] button to update the graphs. Note: Details might change, but will be logical and almost self explanatory.
 
 Visible above is the first of four graphs. The others are placed below it and can be made visible by scrolling down (or pressing the "Page Down" button).
 
