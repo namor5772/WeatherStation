@@ -207,12 +207,15 @@ Photographs can be taken and accessed by the Weather stations web interface. See
 
 ### Attach power
 
-Ultimately 12V power is supplied to the Vero board circuit in the Electronics box via two wires. It comes from a 
+Ultimately 12V power is supplied to the Vero board circuit in the Electronics box via two wires passing through a hole at the base of the Electronics Box enclosed in a short length of 10mm diameter wiring loom tube. Make sure to have the wires in the correct order.
 
-Explain
-[SOLAR PANEL, CONTROLLER, BATTERY AND BOX]
+Examine the [POWER CIRCUIT] section of the **WeatherStation1.dsn** diagram to see how the wiring is connected.
 
-[PICTURE]
+This power is supplied by a 150W Solar panel [ZM9135](https://jaycar.com.au/p/ZM9135) which includes a PWM Solar Charge controller which includes 5 metre leads. These are attached to a 12V 100Ah AGM Deep Cycle Battery [SB1682](https://jaycar.com.au/p/SB1682) enclosed in a battery box [HB8502](https://jaycar.com.au/p/HB8502) which is further enclosed in a large weighted down inverted plastic storage box.
+
+For convenience the wires to the Electronics box are wired to a Marine Grade 10A Locking Lighter Plug [PP1970](https://jaycar.com.au/p/PP1970), this being plugged into the battery box recepticle.
+
+![alt text](images/Power1.png "On site Power generation")
 
 ## Use weather station
 
