@@ -12,7 +12,7 @@
   - [Build circuit board](#Build-circuit-board)
   - [Assemble electronics](#Assemble-electronics)
   - [Attach BME280 sensors](#Attach-BME280-sensor)
-  - [Attach wind and rain guages](#Attach-wind-and-rain-guages)
+  - [Attach wind and rain gauges](#Attach-wind-and-rain-gauges)
   - [Attach wifi interface](#Attach-wifi-interface)
   - [Attach camera](#Attach-camera)
   - [Attach power](#Attach-power)  
@@ -167,25 +167,32 @@ Its box is made of corflute and waterproofed with tape. The base is open to enab
 
 ![alt text](images/BMP280box.png "Box for BME280")
 
-Examine the **WeatherStation1.dsn** diagrams [I2C Sensors] section to see how the wiring should be connected. Note: The I2C data and clock lines should use shielded cable [WB1506](https://jaycar.com.au/p/WB1506) while the power and ground can use light duty hookup wire [WH3004](https://jaycar.com.au/p/WH3004). For connecting, solder eight halves from socket to socket jumper leads [WC6026](https://jaycar.com.au/p/WC6026). We assume that the BME280 breakout board has a 7pin Header Terminal soldered to it (supplied):
+Examine the **WeatherStation1.dsn** diagrams [I2C SENSORS] section to see how the wiring should be connected. Note: The I2C data and clock lines should use shielded cable [WB1506](https://jaycar.com.au/p/WB1506) while the power and ground can use light duty hookup wire [WH3004](https://jaycar.com.au/p/WH3004). For connecting, solder eight halves from socket to socket jumper leads [WC6026](https://jaycar.com.au/p/WC6026). We assume that the BME280 breakout board has a 7pin Header Terminal soldered to it (supplied):
 
 ![alt text](images/BME280.png "BME280 breakout board")
 
-### Attach wind and rain guages
+### Attach wind and rain gauges
 
-These guages come supplied with an installation pipe and attachments as well as long wires terminating in male RJ11 connectors. One for 
- 
-[EXTERNAL WIND & RAIN SENSORS]
-Explain wiring, connections and placement.
-[PICTURE]
+These gauges [SEN-15901](https://core-electronics.com.au/weather-meter-kit.html) are supplied with an installation pipe, attachments and long wires terminating in male RJ11 connectors. One for the wind vane and Anemometer. The other for just the Rain gauge.
 
-[MENTION INTERNAL SENSORS, CPU TEMP, POWER, VOLTAGE & AMP USAGE]
+The wires attach to the Vero Circuit board through a hole at the base of the Electronics Box via a short length of 10mm diameter wiring loom tube.
+
+Examine the **WeatherStation1.dsn** diagrams [HARDWARE DEBOUNCING & ANALOG INPUT] section to see how the wiring is connected.
+
+![alt text](images/WeatherGauges.png "Wind and Rain gauges in the field")
 
 ### Attach wifi interface
 
-Explain Logic, wiring, connections and placament
+This consists of a [WifiModem](https://www.telstra.com.au/internet/mobile-broadband/telstra-4gx-wifi-pro) and a Micro Servo [YM2758](https://jaycar.com.au/p/YM2758). These are located in a sheltered waterproof above ground box and away from the Electronics Box. This keeps the electronics out of the rain, prevents problems due to condensation and allows positioning for optimal reception. This box is made of corflute and waterproofed with tape, just like for the BME280 sensor discussed previously.
 
-The servo has to be glued with araldite to the top of the wifi-dongle near its on/off button.
+![alt text](images/WifiDongle.png "Wifi Modem in the field")
+
+The wires connecting to the Vero Board circuit are 2 metres long to aid positioning and are enclosed in a 10mm diameter wiring loom tube [HP1225](https://jaycar.com.au/p/HP1225). They consist of power to the modem via a USB cable [COU2AMB02](https://www.officeworks.com.au/shop/officeworks/p/comsol-male-type-a-usb-2-0-to-male-mini-usb-cable-2m-cou2amb02) and three wires (Power, Ground and PWM) to the Servo. For the latter use light duty hookup wire [WH3004](https://jaycar.com.au/p/WH3004) and solder three halves from plug to plug jumper leads [WC6024](https://jaycar.com.au/p/WC6024) on the Vero board circuit side.
+
+Examine the **WeatherStation1.dsn** diagrams [WIFI DONGLE POWER & CONTROL] section to see how the wiring is connected.
+
+The servo is glued with araldite to the top of the wifi-dongle near its on/off button. When appropriately activated it presses the button (to shut down the modem or to restart it).
+
 ![alt text](images/wd1.png "Wifi Dongle with Servo attached")
 
 ### Attach camera
@@ -258,7 +265,7 @@ Apart from downloading the above two files you will need to install the "request
 - The directory from which you run the above is irrelevant.
 
 Now you can open the Excel workbook **SensorData.xlsm**. Go to the "Graphs" tab and press the [FULL DATA UPDATE] button. See below:
-![alt text](images/SensorData_xlsm.png "SensorData.xlsm Graphs tab")
+![alt text](imaes/SensorData_xlsm.png "SensorData.xlsm Graphs tab")
 
 This should download the most recent updated weather data file **SensorData.csv** and display the last 3.05 (in this case) days (as detailed in cell T9). You can change this up to "max days" (cell T7) and press the [PROCESS DATA] button to update the graphs.
 
