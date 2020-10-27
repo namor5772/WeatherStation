@@ -29,7 +29,7 @@
 
 ![alt text](images/ws11.png "Weather station on site")
 
-This document describes the design, building and programming of an IOT enabled weather station. At regular intervals (eg. every 10 minutes) it measures a range of weather and other statistics, saving them as time stamped rows to an updated csv file. In particular:
+This document describes the design, building and programming of an IOT enabled weather station. At regular intervals (eg. every 15 minutes) it measures a range of weather and other statistics, saving them as time stamped rows to an updated csv file. In particular:
 
 1. Temperature (C)
 1. Pressure (HPa)
@@ -211,7 +211,7 @@ Explain
 
 ### Access web interface
 
-Once the weather station is running, it just sits there collecting weather data every 10 minutes and appending it to a csv file. It can be accessed and controlled via a web interface which is displayed below after the **help** command is submitted.
+Once the weather station is running, it just sits there collecting weather data every 15 minutes and appending it to a csv file. It can be accessed and controlled via a web interface which is displayed below after the **help** command is submitted.
 
 ![alt text](images/iot1.png "web site - after help command")
 
