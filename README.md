@@ -183,7 +183,7 @@ Examine the **WeatherStation1.dsn** diagrams [HARDWARE DEBOUNCING & ANALOG INPUT
 
 ### Attach wifi interface
 
-This consists of a [WifiModem](https://www.telstra.com.au/internet/mobile-broadband/telstra-4gx-wifi-pro) and a Micro Servo [YM2758](https://jaycar.com.au/p/YM2758). These are located in a sheltered waterproof above ground box and away from the Electronics Box. This keeps the electronics out of the rain, prevents problems due to condensation and allows positioning for optimal reception. This box is made of corflute and waterproofed with tape, just like for the BME280 sensor discussed previously.
+This consists of a [WifiModem](https://www.telstra.com.au/internet/mobile-broadband/telstra-4gx-hotspot) and a Micro Servo [YM2758](https://jaycar.com.au/p/YM2758). These are located in a sheltered waterproof above ground box and away from the Electronics Box. This keeps the electronics out of the rain, prevents problems due to condensation and allows positioning for optimal reception. This box is made of corflute and waterproofed with tape, just like for the BME280 sensor discussed previously.
 
 ![alt text](images/WifiDongle.png "Wifi Modem in the field")
 
@@ -341,5 +341,5 @@ The Macros reside in the "MyModule" module. Examine them for details and adjust 
 |1 | [WH3004](https://jaycar.com.au/p/WH3004) | Yellow Light Duty Hook-up Wire - 25m ( only 2 metres needed ) | $5.95 | used for attaching external sensors/servo |
 |1 | [WB1506](https://jaycar.com.au/p/WB1506) |  FIG 8 - OFC Shielded Audio Cable - Sold per metre - 1 metre )| $4.95 | used for attaching external I2C sensor |
 |1 | [HP1225](https://jaycar.com.au/p/HP1225) | 10mm Loom Tube - 10 metres ( only 4 metres needed ) | $18.95 | keeps wires to external sensors and wifi dongle secure |
-|1 | [WifiModem](https://www.telstra.com.au/internet/mobile-broadband/telstra-4gx-wifi-pro) | Telstra 4GX Wi-Fi Pro | $120.0 | connects weather station to the internet |
+|1 | [WifiModem](https://www.telstra.com.au/internet/mobile-broadband/telstra-4gx-hotspot) | Telstra 4GX Wi-Fi Pro | $120.0 | connects weather station to the internet |
 |1 | [COU2AMB02](https://www.officeworks.com.au/shop/officeworks/p/comsol-male-type-a-usb-2-0-to-male-mini-usb-cable-2m-cou2amb02) | USB A to Mini-B 2M Cable | $14.88 | power to above wifi dongle from Vero board power circuit |
