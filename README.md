@@ -201,7 +201,7 @@ A Raspberry PI camera [CE04421](https://core-electronics.com.au/raspberry-pi-cam
 
 ![alt text](images/BindaPhoto1.png "On site photo")
 
-The Camera is attached using spacers [HP0924](https://jaycar.com.au/p/HP0924),  screws [HP0924](https://jaycar.com.au/p/HP0924) and washers to a wateproofed (with silicon) glass or prespex window in the Electronics box.
+The Camera is attached to the inside of the Electronics box using spacers [HP0924](https://jaycar.com.au/p/HP0924), screws [HP0924](https://jaycar.com.au/p/HP0924) and washers to a wateproofed (with silicon) glass or prespex window.
 
 ![alt text](images/Camera1.png "Camera attached to Electronics box")
 
