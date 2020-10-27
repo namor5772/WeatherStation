@@ -197,8 +197,11 @@ The servo is glued with araldite to the top of the wifi-dongle near its on/off b
 
 ### Attach camera
 
-[RASPBERRY PI CAMERA - COULD IN FUTURE BE EXTERNAL]
-[PICTURE]
+A Raspberry PI camera [CE04421](https://core-electronics.com.au/raspberry-pi-camera-board-v2-8-megapixels-38552.html) is attached to to the Raspberry Pi via a longer 610mm cable [ADA1731](https://core-electronics.com.au/flex-cable-for-raspberry-pi-camera-610mm-24.html). Take care to attach the cable the right way. Photograhs can be taken and accessed by the Weather stations web interface.
+
+The Camera is attached using spacers [HP0924](https://jaycar.com.au/p/HP0924),  screws [HP0924](https://jaycar.com.au/p/HP0924) and washers to a wateproofed (with silicon) glass or prespex window in the Electronics box.
+
+![alt text](images/Camera1.png "Camera attached to Electronics box")
 
 ### Attach power
 
