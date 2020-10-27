@@ -151,14 +151,13 @@ Attach this to the base of a Corflute A4 sized weather proofed box. You will the
 
 ![alt text](images/WeatherBox.png "Weather station box")
 
-The box was then placed on top of a milk crate, enabling the loom tubes to come out underneath. The Corflue box was then secured to the milk crate and the latter to the ground (in my case to a heavy wooden pallet).
+The box is then placed on top of a milk crate, enabling the loom tubes to come out underneath. The Corflue box is then secured to the milk crate and the latter to the ground (in my case to a heavy wooden pallet).
 
 ![alt text](images/WeatherBox2.png "Weather station box secured")
 
-A wateproofed (with silicon) glass or respex window will also need to be made in the box. This is used to mount the Raspberry PI camera in a waterproof way.
+A wateproofed (with silicon) glass or respex window must also be made in the box. This is used to mount the Raspberry PI camera in a waterproof way.
 
 ![alt text](images/WeatherBox3.png "Weather station box secured")
-
 
 ### Attach BME280 sensor
 
@@ -172,11 +171,10 @@ Examine the **WeatherStation1.dsn** diagrams [I2C Sensors] section to see how th
 
 ![alt text](images/BME280.png "BME280 breakout board")
 
-[BMP280 I2C EXTERNAL SENSOR IN CORFLUTE HOUSING AND SHIELDED WIRING]
-Expain wiring, connections, box and placements.
-
 ### Attach wind and rain guages
 
+These guages come supplied with an installation pipe and attachments as well as long wires terminating in male RJ11 connectors. One for 
+ 
 [EXTERNAL WIND & RAIN SENSORS]
 Explain wiring, connections and placement.
 [PICTURE]
