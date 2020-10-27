@@ -197,13 +197,17 @@ The servo is glued with araldite to the top of the wifi-dongle near its on/off b
 
 ### Attach camera
 
-A Raspberry PI camera [CE04421](https://core-electronics.com.au/raspberry-pi-camera-board-v2-8-megapixels-38552.html) is attached to to the Raspberry Pi via a longer 610mm cable [ADA1731](https://core-electronics.com.au/flex-cable-for-raspberry-pi-camera-610mm-24.html). Take care to attach the cable the right way. Photograhs can be taken and accessed by the Weather stations web interface.
+A Raspberry PI camera [CE04421](https://core-electronics.com.au/raspberry-pi-camera-board-v2-8-megapixels-38552.html) is attached to the Raspberry Pi via a longer than standard 610mm cable [ADA1731](https://core-electronics.com.au/flex-cable-for-raspberry-pi-camera-610mm-24.html). Take care to attach the cable the right way around. Photographs can be taken and accessed by the Weather stations web interface. See [Access web interface](#Access-web-interface).
+
+![alt text](images/BindaPhoto1.png "On site photo")
 
 The Camera is attached using spacers [HP0924](https://jaycar.com.au/p/HP0924),  screws [HP0924](https://jaycar.com.au/p/HP0924) and washers to a wateproofed (with silicon) glass or prespex window in the Electronics box.
 
 ![alt text](images/Camera1.png "Camera attached to Electronics box")
 
 ### Attach power
+
+Ultimately 12V power is supplied to the Vero board circuit in the Electronics box via two wires. It comes from a 
 
 Explain
 [SOLAR PANEL, CONTROLLER, BATTERY AND BOX]
