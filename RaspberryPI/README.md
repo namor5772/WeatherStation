@@ -275,7 +275,7 @@ For interest, the listings of the main files **wwwRP.py** and **index.php** are 
 | [wwwRP_basic.py](data/wwwRP_basic.py) | home/pi/roman | Raspberry PI only test version of wwwRP.py |
 | [index_basic.php](data/index_basic.php) | var/www/html | Raspberry PI only test version of index.py |
 
-### Listing of wwwRP.py
+### **Listing of wwwRP.py**
 
 ```python
 #!/usr/bin/python3
@@ -826,7 +826,7 @@ except KeyboardInterrupt:
     k = k+1
 ```
 
-### Listing of index.php
+### **Listing of index.php**
 
 ```php
 <!DOCTYPE html>
