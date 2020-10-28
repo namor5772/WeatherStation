@@ -12,6 +12,8 @@
 - [Setup Dataplicity](#Setup-Dataplicity)
 - [Internet](#Internet)
 - [Code files](#Code-files)
+  - [Listing of wwwRP.py](#Listing-of-wwwRP.py)
+  - [Listing of index.php](#Listing-of-index.php)
 - [Configuration](#Configuration)
 - [Backup](#Backup)
 
