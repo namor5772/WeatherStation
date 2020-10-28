@@ -56,6 +56,8 @@ No setup of software for the Leonardo is necessary apart from just compiling and
 
 To successfully compile you will also need to download the three third party libraries shown above.
 
+For interest, the listing of the main file **ArduinoLeonardo_ino** is shown below.
+
 ### **Listing of ArduinoLeonardo_ino**
 
 ```c++
