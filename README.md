@@ -2,7 +2,7 @@
 
 ## Contents
 
-- [Summary ---](#Summary)
+- [Summary](#Summary)
 - [Setup Raspberry PI](#Setup-Raspberry-PI)
 - [Setup Arduino](#Setup-Arduino)
 - [Design circuit board](#Design-circuit-board)
