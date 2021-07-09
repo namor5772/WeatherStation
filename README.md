@@ -1,4 +1,4 @@
-# **Weather Station**
+# **Weather Station v2**
 
 ## Contents
 
@@ -23,7 +23,6 @@
   - [Core components](#Core-components)
   - [Connectors](#Connectors)
   - [External components](#External-components)
-
 
 ## Summary
 
@@ -267,9 +266,11 @@ Apart from downloading the above two files you will need to install the "request
 - Open the command terminal by running the Command Prompt App.
   - You can find it by typing **Command Prompt** in the Search bar.
 - Now type the following and press the Enter key:
-  ``` 
+
+  ```bash
   python -m pip install requests
   ```
+
 - If not already installed you should see something like this in the terminal window.
   ![alt text](images/requests.png "Install requests python module")
 - The directory from which you run the above is irrelevant.
