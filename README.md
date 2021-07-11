@@ -1,4 +1,4 @@
-# **Weather Station v2**
+# **Weather Station
 
 ## Contents
 
