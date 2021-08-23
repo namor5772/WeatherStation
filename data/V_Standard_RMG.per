@@ -84,24 +84,6 @@ File,19
     [{"Pin" : "6"},"Body","Body","Body","Body",{"Pin" : "12"}]
     ]
   },
-  { "Name" : "DIP28N", "Locked" : false,
-    "Rows" : [
-    [{"Pin" : "1"},"Free","Free",{"Pin" : "28"}],
-    [{"Pin" : "2"},"Body","Body",{"Pin" : "27"}],
-    [{"Pin" : "3"},"Body","Body",{"Pin" : "26"}],
-    [{"Pin" : "4"},"Body","Body",{"Pin" : "25"}],
-    [{"Pin" : "5"},"Body","Body",{"Pin" : "24"}],
-    [{"Pin" : "6"},"Body","Body",{"Pin" : "23"}],
-    [{"Pin" : "7"},"Body","Body",{"Pin" : "22"}],
-    [{"Pin" : "8"},"Body","Body",{"Pin" : "21"}],
-    [{"Pin" : "9"},"Body","Body",{"Pin" : "20"}],
-    [{"Pin" : "10"},"Body","Body",{"Pin" : "19"}],
-    [{"Pin" : "11"},"Body","Body",{"Pin" : "18"}],
-    [{"Pin" : "12"},"Body","Body",{"Pin" : "17"}],
-    [{"Pin" : "13"},"Body","Body",{"Pin" : "16"}],
-    [{"Pin" : "14"},"Body","Body",{"Pin" : "15"}]
-    ]
-  },
   { "Name" : "DIP6", "Locked" : false,
     "Rows" : [
     [{"Pin" : "1"},"Free","Free",{"Pin" : "6"}],
@@ -175,6 +157,24 @@ File,19
     [{"Pin" : "12"},"Body","Body","Body","Body","Body",{"Pin" : "17"}],
     [{"Pin" : "13"},"Body","Body","Body","Body","Body",{"Pin" : "16"}],
     [{"Pin" : "14"},"Body","Body","Body","Body","Body",{"Pin" : "15"}]
+    ]
+  },
+  { "Name" : "DIP28N", "Locked" : false,
+    "Rows" : [
+    [{"Pin" : "1"},"Free","Free",{"Pin" : "28"}],
+    [{"Pin" : "2"},"Body","Body",{"Pin" : "27"}],
+    [{"Pin" : "3"},"Body","Body",{"Pin" : "26"}],
+    [{"Pin" : "4"},"Body","Body",{"Pin" : "25"}],
+    [{"Pin" : "5"},"Body","Body",{"Pin" : "24"}],
+    [{"Pin" : "6"},"Body","Body",{"Pin" : "23"}],
+    [{"Pin" : "7"},"Body","Body",{"Pin" : "22"}],
+    [{"Pin" : "8"},"Body","Body",{"Pin" : "21"}],
+    [{"Pin" : "9"},"Body","Body",{"Pin" : "20"}],
+    [{"Pin" : "10"},"Body","Body",{"Pin" : "19"}],
+    [{"Pin" : "11"},"Body","Body",{"Pin" : "18"}],
+    [{"Pin" : "12"},"Body","Body",{"Pin" : "17"}],
+    [{"Pin" : "13"},"Body","Body",{"Pin" : "16"}],
+    [{"Pin" : "14"},"Body","Body",{"Pin" : "15"}]
     ]
   },
   { "Name" : "DIP40", "Locked" : true,
@@ -298,6 +298,19 @@ File,19
     [{"Pin" : "6"}],
     [{"Pin" : "7"}],
     [{"Pin" : "8"}]
+    ]
+  },
+  { "Name" : "SIP9", "Locked" : true,
+    "Rows" : [
+    [{"Pin" : "1"}],
+    [{"Pin" : "2"}],
+    [{"Pin" : "3"}],
+    [{"Pin" : "4"}],
+    [{"Pin" : "5"}],
+    [{"Pin" : "6"}],
+    [{"Pin" : "7"}],
+    [{"Pin" : "8"}],
+    [{"Pin" : "9"}]
     ]
   },
   { "Name" : "SIP10", "Locked" : true,
@@ -491,17 +504,10 @@ File,19
     ["Body","Body","Body","Body","Body","Body","Body","Body","Body","Body"]
     ]
   },
-  { "Name" : "SIP9", "Locked" : true,
+  { "Name" : "SIP8_SML", "Locked" : true,
     "Rows" : [
-    [{"Pin" : "1"}],
-    [{"Pin" : "2"}],
-    [{"Pin" : "3"}],
-    [{"Pin" : "4"}],
-    [{"Pin" : "5"}],
-    [{"Pin" : "6"}],
-    [{"Pin" : "7"}],
-    [{"Pin" : "8"}],
-    [{"Pin" : "9"}]
+    ["Body",{"Pin" : "1"},{"Pin" : "2"},{"Pin" : "3"},{"Pin" : "4"},{"Pin" : "5"},{"Pin" : "6"},{"Pin" : "7"},{"Pin" : ""},"Body"],
+    ["Body","Body","Body","Body","Body","Body","Body","Body","Body","Body"]
     ]
   }
 ],
@@ -1030,6 +1036,22 @@ File,19
     { "X5" : 6, "Y5" : 10, "DX5" : 7, "DY5" : 0}
     ]
   },
+  { "Name" : "TO220_5_Lead", "Locked" : true,
+    "Pins" : [
+    { "Name" : "1", "X5" : 17, "Y5" : 2 },
+    { "Name" : "2", "X5" : 17, "Y5" : 7 },
+    { "Name" : "3", "X5" : 17, "Y5" : 12 },
+    { "Name" : "4", "X5" : 17, "Y5" : 17 },
+    { "Name" : "5", "X5" : 17, "Y5" : 22 }
+    ],
+    "Lines" : [
+    { "X5" : 15, "Y5" : 0, "DX5" : 7, "DY5" : 0},
+    { "X5" : 20, "Y5" : 0, "DX5" : 0, "DY5" : 24},
+    { "X5" : 22, "Y5" : 24, "DX5" : -7, "DY5" : 0},
+    { "X5" : 15, "Y5" : 24, "DX5" : 0, "DY5" : -24},
+    { "X5" : 22, "Y5" : 0, "DX5" : 0, "DY5" : 24}
+    ]
+  },
   { "Name" : "TO5", "Locked" : false,
     "Pins" : [
     { "Name" : "3", "X5" : 7, "Y5" : 2 },
@@ -1119,22 +1141,6 @@ File,19
     { "X5" : 6, "Y5" : 14, "DX5" : -6, "DY5" : 0},
     { "X5" : 0, "Y5" : 14, "DX5" : 0, "DY5" : -14},
     { "X5" : 4, "Y5" : 0, "DX5" : 0, "DY5" : 14}
-    ]
-  },
-  { "Name" : "TO220_5_Lead", "Locked" : true,
-    "Pins" : [
-    { "Name" : "1", "X5" : 17, "Y5" : 2 },
-    { "Name" : "2", "X5" : 17, "Y5" : 7 },
-    { "Name" : "3", "X5" : 17, "Y5" : 12 },
-    { "Name" : "4", "X5" : 17, "Y5" : 17 },
-    { "Name" : "5", "X5" : 17, "Y5" : 22 }
-    ],
-    "Lines" : [
-    { "X5" : 15, "Y5" : 0, "DX5" : 7, "DY5" : 0},
-    { "X5" : 20, "Y5" : 0, "DX5" : 0, "DY5" : 24},
-    { "X5" : 22, "Y5" : 24, "DX5" : -7, "DY5" : 0},
-    { "X5" : 15, "Y5" : 24, "DX5" : 0, "DY5" : -24},
-    { "X5" : 22, "Y5" : 0, "DX5" : 0, "DY5" : 24}
     ]
   },
   { "Name" : "TO92_4_Lead", "Locked" : true,
@@ -1551,6 +1557,11 @@ File,19
   "Text" : { "X" : 1, "Y" : -1, "Angle" : 0, "Visible" : true },
   "Group" : 0
   },
+  { "Designator" : "DIP6_S1", "Value" : "??", "Outline" : "DIP6_S1",
+  "X1000" : 88000, "Y1000" : 24000, "EndDeltaX" : 0, "EndDeltaY" : 1,
+  "Text" : { "X" : 1, "Y" : -1, "Angle" : 0, "Visible" : true },
+  "Group" : 0
+  },
   { "Designator" : "DIP8", "Value" : "??", "Outline" : "DIP8",
   "X1000" : 35000, "Y1000" : 35000, "EndDeltaX" : 0, "EndDeltaY" : 1,
   "Text" : { "X" : 1, "Y" : -1, "Angle" : 0, "Visible" : true },
@@ -1583,11 +1594,6 @@ File,19
   },
   { "Designator" : "DIP40", "Value" : "", "Outline" : "DIP40",
   "X1000" : 66000, "Y1000" : 25000, "EndDeltaX" : 0, "EndDeltaY" : 1,
-  "Text" : { "X" : 1, "Y" : -1, "Angle" : 0, "Visible" : true },
-  "Group" : 0
-  },
-  { "Designator" : "DIP6_S1", "Value" : "??", "Outline" : "DIP6_S1",
-  "X1000" : 88000, "Y1000" : 25000, "EndDeltaX" : 0, "EndDeltaY" : 1,
   "Text" : { "X" : 1, "Y" : -1, "Angle" : 0, "Visible" : true },
   "Group" : 0
   },
@@ -1731,6 +1737,11 @@ File,19
   "Text" : { "X" : 4, "Y" : 3, "Angle" : 0, "Visible" : true },
   "Group" : 0
   },
+  { "Designator" : "SIP8_SML", "Value" : "??", "Outline" : "SIP8_SML",
+  "X1000" : 77000, "Y1000" : 35000, "EndDeltaX" : 0, "EndDeltaY" : 1,
+  "Text" : { "X" : 4, "Y" : 1, "Angle" : 0, "Visible" : true },
+  "Group" : 0
+  },
   { "Designator" : "SIP9", "Value" : "??", "Outline" : "SIP9",
   "X1000" : 25000, "Y1000" : 3000, "EndDeltaX" : 0, "EndDeltaY" : 1,
   "Text" : { "X" : 0, "Y" : -2, "Angle" : 90, "Visible" : true },
@@ -1738,11 +1749,6 @@ File,19
   },
   { "Designator" : "TACT_01", "Value" : "TACT SWITCH", "Outline" : "TACT_01",
   "X1000" : 2000, "Y1000" : 37000, "EndDeltaX" : 0, "EndDeltaY" : 1,
-  "Text" : { "X" : 1, "Y" : -1, "Angle" : 0, "Visible" : true },
-  "Group" : 0
-  },
-  { "Designator" : "TO220_5_Lead", "Value" : "", "Outline" : "TO220_5_Lead",
-  "X1000" : 17000, "Y1000" : 41000, "EndDeltaX" : 0, "EndDeltaY" : 1,
   "Text" : { "X" : 1, "Y" : -1, "Angle" : 0, "Visible" : true },
   "Group" : 0
   },
@@ -1769,6 +1775,11 @@ File,19
   { "Designator" : "TO220", "Value" : "??", "Outline" : "TO220",
   "X1000" : 9000, "Y1000" : 42000, "EndDeltaX" : 0, "EndDeltaY" : 1,
   "Text" : { "X" : 0, "Y" : -2, "Angle" : 0, "Visible" : true },
+  "Group" : 0
+  },
+  { "Designator" : "TO220_5_Lead", "Value" : "", "Outline" : "TO220_5_Lead",
+  "X1000" : 17000, "Y1000" : 41000, "EndDeltaX" : 0, "EndDeltaY" : 1,
+  "Text" : { "X" : 1, "Y" : -1, "Angle" : 0, "Visible" : true },
   "Group" : 0
   },
   { "Designator" : "TO92_4_Lead", "Value" : "", "Outline" : "TO92_4_Lead",
