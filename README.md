@@ -1,4 +1,4 @@
-# **Weather Station
+# Weather Station
 
 ## Contents
 
